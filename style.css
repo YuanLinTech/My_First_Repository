@@ -13,10 +13,12 @@ div{
 #ordered_list{
     color:magenta;
 }
-.large-font{
-    font-size: 2rem;
-}
+
 .deep-background{
     background-color:black;
     font-size: 4rem;
+}
+
+.large-font {
+    font-size: 2rem;
 }
