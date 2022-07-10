@@ -9,6 +9,7 @@ div{
 }
 #unordered_list{
     color:teal;
+    font-size:2rem;
 }
 #ordered_list{
     color:magenta;
