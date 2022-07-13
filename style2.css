@@ -1,18 +1,18 @@
 #block{
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
+    flex-wrap:wrap
 }
 
 
-#A,
-#B{
+.A,
+.B{
     width:50px;
     border: 2px solid #000;
     margin: 10px;
     text-align:center;
 }
 
-#B{
-
-    width:100px;
+.B{
+    width:50px;
 }
