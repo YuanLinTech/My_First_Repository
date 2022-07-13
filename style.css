@@ -76,7 +76,16 @@ select {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
+}
 
-
-
+input[type=submit],
+select {
+    width: 100%;
+    background:#4caf50;
+    color:#fff;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
 }
