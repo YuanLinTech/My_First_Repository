@@ -1,0 +1,10 @@
+table,
+th,
+td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+.mytable_class {
+    background-color: orange;
+}
