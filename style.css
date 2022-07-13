@@ -32,3 +32,13 @@ div{
     margin: 10px;
     border: 1 px dashed gold;
 }
+
+table{
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+th, 
+td {
+    border: 1px solid grey;
+}
