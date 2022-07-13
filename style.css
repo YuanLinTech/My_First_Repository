@@ -30,5 +30,5 @@ div{
     border-radius: 10px;
     display: inline-block;
     margin: 10px;
-
+    border: 1 px dashed gold;
 }
