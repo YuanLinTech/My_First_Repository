@@ -30,7 +30,7 @@ div{
     border-radius: 10px;
     display: inline-block;
     margin: 10px;
-    border: 1 px dashed gold;
+    border: 1px dashed gold;
 }
 
 table,
@@ -42,4 +42,9 @@ td {
 
 .mytable_class{
     background-color: orange;
+}
+
+.image{
+    width:50%;
+    min-width:500px;
 }
