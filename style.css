@@ -53,8 +53,8 @@ body{
     height: 100vh;
     display: flex;
     flex-direction:column;
-    /* align-items: center;
-    justify-content:center; */
+    align-items: center;
+    justify-content:center;
 }
 
 section{
@@ -63,6 +63,4 @@ section{
     max-width:600px;
     background-color: #f2f2f2;
     padding:20px;
-    align-items: center;
-    justify-content: center;
 }
