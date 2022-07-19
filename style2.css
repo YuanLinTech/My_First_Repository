@@ -16,8 +16,8 @@ body{
     flex-direction:column-reverse;
 }
 
-#A,
-#B{
+.A,
+.B{
     width: 50px;
     height: 20px;
     border: 2px solid black;
@@ -25,7 +25,7 @@ body{
     text-align: center;
 }
 
-#B{
+.B{
     width: 100px;
     height: 20px;
 }
