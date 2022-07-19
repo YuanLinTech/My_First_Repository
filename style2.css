@@ -4,13 +4,24 @@
     box-sizing: border-box;
 }
 
+html,
+body{
+    width:100vw;
+    height:100vh;
+
+}
+
 #block{
     display: flex;
 }
 
 #A,
 #B{
-    width: 50 px;
-    border: 2 px solid black;
-    margin: 10 px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+#B{
+    width: 100px;
 }
