@@ -29,12 +29,3 @@ body {
 #B {
     width: 100 px;
 }
-
-
-.A,
-.B{
-    width:100%;
-    border: 2px solid #000;
-    margin: 10px;
-    text-align:center;
-}
