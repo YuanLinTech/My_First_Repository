@@ -153,3 +153,15 @@ section.showcase>header>.logo{
 .social li a:hover{
     transform: translateY(-10px);
 }
+
+@media(max-width: 798px){
+    .showcase{
+        padding: 40px;
+    }
+    .text h1{
+        font-size: 3rem;
+    }
+    .text h2{
+        font-size: 2rem;
+    }
+}
