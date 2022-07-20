@@ -37,7 +37,7 @@ section.showcase>.text>p{
     left: 0;
     width: 100%;
 
-    padding: 40px; /* Top Left and right Bottom */ /* Top Right Bottom Left */
+    padding: 40px 100px; /* Top Left and right Bottom */ /* Top Right Bottom Left */
     z-index: 99;
     display: flex;
     flex-direction: column;
@@ -93,3 +93,48 @@ section.showcase>header>.logo{
     background-color: var(--background-color);
     mix-blend-mode: overlay;
 }
+
+.text h1{
+    font-size: 5rem; /* Relative to root*/
+    font-weight: 800;
+    line-height: 1em;
+}
+
+.text h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1em;
+}
+
+.text p {
+    font-size: 1.1rem;
+    margin: 20px 0;
+    line-height: 1em;
+    max-width: 700px;
+}
+
+.text a{
+    display: inline-block;
+    font-size: 1rem;
+    background-color: var(--background-color);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    color: var(--background-color);
+    margin-top: 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    cursor: 0.2s;
+}
+
+.text a:hover{
+    letter-spacing: 6px;
+}
+/* .overlay2 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25;
+    background: rgba(20,176,25);
+} */
