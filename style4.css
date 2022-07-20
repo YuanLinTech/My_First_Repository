@@ -145,3 +145,11 @@ section.showcase>header>.logo{
     filter: invert(1);
     margin-right: 20px;
 }
+
+.social li a:not(last-child) {
+    margin-right: 20px;
+}
+
+.social li a:hover{
+    transform: translateY(-10px);
+}
