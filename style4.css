@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --overlay-color: #03a9f4;
+    --background-color: #000;
+    --font-color: #fff;
+    --menu-width: 300px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+section.showcase>.text>h2{
+
+    display: inline-block;
+}
+
+section.showcase>.text>p{
+
+    display: inline;
+}
+
+.showcase{
+    display: block;
+    position: relative;
+
+}
+
+.showcase header{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+section.showcase>.text>h1,
+section.showcase>.text>h2,
+section.showcase>header>.logo{
+    text-transform: uppercase;
+}
+
+section.showcase>header>.toggle {
+    width: 60px;
+    height: 60px;
+    background: url('src/menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
