@@ -15,7 +15,7 @@
     font-family: 'poppins', sans-serif;
 }
 
-section.showcase>.text>h2{
+/* section.showcase>.text>h2{
 
     display: inline-block;
 }
@@ -29,13 +29,14 @@ section.showcase>.text>p{
     display: block;
     position: relative;
 
-}
+} */
 
-.showcase header{
+.showcase {
     position: absolute;
-    right: 0;
-    bottom: 0;
-
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 80px 40px 50px 40px; /* Top Left and right Bottom */ /* Top Right Bottom Left */
 }
 
 section.showcase>.text>h1,
