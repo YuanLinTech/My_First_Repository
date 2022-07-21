@@ -15,7 +15,7 @@ body{
     display: flex;
     flex-direction: row;
     /* flex-wrap:wrap; */
-    justify-content: right;
+    justify-content: space-between;
 }
 
 .A,
