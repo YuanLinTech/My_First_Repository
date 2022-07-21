@@ -20,7 +20,7 @@ body{
 .A,
 .B,
 .C{
-    width: 50%;
+    width: 100%;
     height: 20px;
     border: 2px solid black;
     margin: 1px;
