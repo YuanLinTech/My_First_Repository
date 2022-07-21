@@ -22,7 +22,7 @@ body{
 .B,
 .C{
     width: 100%;
-    height: 50%;
+    height: 50px;
     border: 2px solid black;
     margin: 1px;
     text-align: center;
