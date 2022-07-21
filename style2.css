@@ -26,13 +26,13 @@ body{
     margin: 1px;
     text-align: center;
     flex-grow: 1;
-    flex-shrink: 1;
+    /* flex-shrink: 1; */
 }
 
 .B{
     flex-grow: 2;
 }
 
-.C{
+/* .C{
     flex-shrink: 3;
-}
+} */
