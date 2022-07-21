@@ -14,25 +14,25 @@ body{
 #block{
     display: flex;
     flex-direction:row;
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
 }
 
 .A,
 .B,
 .C{
-    width: 50%;
+    width: 20%;
     height: 20px;
     border: 2px solid black;
     margin: 1px;
     text-align: center;
     flex-grow: 1;
-    flex-shrink: 1;
+    /* flex-shrink: 1; */
 }
 
 .B{
     flex-grow: 2;
 }
 
-.C{
+/* .C{
     flex-shrink: 3;
-}
+} */
