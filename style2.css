@@ -31,10 +31,10 @@ body{
     flex-shrink: 1; */
 }
 
-/* .B{
-    flex-grow: 2;
+.B{
+    width: 200px;
 }
 
-.C{
+/* .C{
     flex-shrink: 4;
 } */
