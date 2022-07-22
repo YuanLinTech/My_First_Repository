@@ -13,7 +13,7 @@ body{
 
 .block{
     /* height: 100%; */
-    /* width: 20%; */
+    width: 30%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -30,8 +30,4 @@ body{
     text-align: center;
     /* flex-grow: 1;
     flex-shrink: 1; */
-}
-
-.B{
-    width: 200px;
 }
