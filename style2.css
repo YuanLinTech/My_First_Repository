@@ -12,27 +12,29 @@ body{
 }
 
 #block{
+    height: 100%;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .A,
 .B,
 .C{
     width: 50%;
-    height: 20px;
+    height: 50px;
     border: 2px solid black;
     margin: 1px;
     text-align: center;
-    flex-grow: 1;
-    flex-shrink: 1;
+    /* flex-grow: 1;
+    flex-shrink: 1; */
 }
 
-.B{
+/* .B{
     flex-grow: 2;
 }
 
 .C{
     flex-shrink: 4;
-}
+} */
