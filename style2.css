@@ -11,23 +11,29 @@ body{
 
 }
 
-.block{
+#block{
     /* height: 100%; */
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    /* justify-content: center;
-    align-content: center; */
+    /* flex-wrap: wrap; */
 }
 
 .A,
 .B,
 .C{
-    /* height: 50px; */
-    width: 50px;
+    width: 20%;
+    height: 20px;
     border: 2px solid black;
     margin: 1px;
     text-align: center;
-    /* flex-grow: 1;
-    flex-shrink: 1; */
+    flex-grow: 1;
+    /* flex-shrink: 1; */
 }
+
+.B{
+    flex-grow: 2;
+}
+
+/* .C{
+    flex-shrink: 3;
+} */
