@@ -22,7 +22,6 @@ body{
 .A,
 .B,
 .C{
-    width: 50%;
     height: 50px;
     border: 2px solid black;
     margin: 1px;
