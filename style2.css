@@ -16,7 +16,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-self: self-end;
+    justify-content: center;
 }
 
 .A,
@@ -32,6 +32,7 @@ body{
 
 .B{
     width: 200px;
+    align-self: center;
 }
 
 /* .C{
