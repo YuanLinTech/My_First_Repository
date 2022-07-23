@@ -32,7 +32,7 @@ body{
 
 .B{
     width: 200px;
-    align-self: center;
+    align-self: end;
 }
 
 /* .C{
