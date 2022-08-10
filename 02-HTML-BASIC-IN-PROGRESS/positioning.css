@@ -26,3 +26,19 @@
     top: 100px;
     left: 300px;
 }
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 45%;
+}
+
+.sticky{
+    position: sticky;
+    top: 50px;
+    left: 0;
+}
+
+.body{
+    height: 2000px;
+}
