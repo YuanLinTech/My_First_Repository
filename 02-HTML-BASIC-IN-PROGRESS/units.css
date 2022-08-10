@@ -4,12 +4,10 @@
 }
 
 div{
-
     margin-bottom: 8px;
 }
 
 hr{
-
     margin: 20px 0;
 }
 
@@ -23,7 +21,10 @@ hr{
 
 .fifty-vw{
     width: 50vw;
+}
 
+.fifty-vh {
+    width: 50vh;
 }
 
 .parent-container{
