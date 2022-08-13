@@ -2,11 +2,14 @@ h1,h2,h3,h4,p,li{
     font-family: sans-serif;
 }
 
+h1,h2,h3{
+    color: #1098ab;
+}
+
 h1{
     font-size: 26px;
     /* text-transform: lowercase; */
     font-style: italic;
-    color:#1098ab;
 }
 
 h2{
@@ -50,4 +53,8 @@ li{
 .related-author{
     font-size: 18px;
     font-weight: bold;
+}
+
+.main-header{
+    background-color: #f7f7f7;
 }
