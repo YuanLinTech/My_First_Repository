@@ -35,11 +35,14 @@ li{
     font-size: 16px;
 } */
 
-#author{
-    font-style: italic;
-}
+/* Always use class over id.*/
+/* Class is more future-proof.*/
 
-#copyright{
+/* #author{
+    font-style: italic;
+} */
+
+.copyright{
     font-size: 16px;
 }
 
