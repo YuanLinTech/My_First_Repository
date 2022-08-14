@@ -63,6 +63,12 @@ li:first-child {
     font-weight: bold;
 }
 
+/* Select the p element inside article that is the first child of article.*/
+
+article p:first-child{
+    color: red;
+}
+
 .main-header{
     background-color: #f7f7f7;
 }
