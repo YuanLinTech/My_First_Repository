@@ -91,6 +91,11 @@ body{
     height: 80px;
 }
 
+.post-img{
+    width: 800px;
+    height: auto;
+}
+
 aside{
     background-color: #f7f7f7;
     border: 5px solid #1098ab;
