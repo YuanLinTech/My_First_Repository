@@ -27,6 +27,8 @@ p{
 
 h3{
     font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 h4{
@@ -48,6 +50,14 @@ li:last-child{
     margin-bottom: 0;
 }
 
+article {
+    margin-bottom: 60px;
+}
+
+ul,ol{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
 /* Lowest priority among all priorities specifically defined for body elements.
 body{
     color: red;
