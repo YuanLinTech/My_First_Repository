@@ -96,7 +96,7 @@ a:visited{
 a:hover{
     color: orangered;
     font-weight: bold;
-    text-decoration: underline orangered;
+    text-decoration: underline solid orangered;
 }
 
 /* Select and style the active link, which is the link you are clicking on.*/
