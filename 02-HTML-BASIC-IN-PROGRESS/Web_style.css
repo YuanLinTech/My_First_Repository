@@ -65,9 +65,9 @@ li:first-child {
 
 /* Select the p element inside article that is the first child of article.*/
 
-article p:first-child{
+/* article p:first-child{
     color: red;
-}
+} */
 
 .main-header{
     background-color: #f7f7f7;
@@ -76,4 +76,26 @@ article p:first-child{
 aside{
     background-color: #f7f7f7;
     border: 5px solid #1098ab;
+}
+
+/* Select and style unvisited links. */
+a:link{
+    color: #000;
+}
+
+/* Select and style visited links. */
+a:visited{
+    color: #1098ab;
+}
+
+/* Select and style links that you are mousing over.*/
+a:hover{
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline orangered;
+}
+
+/* Select and style the active link, which is the link you just clicked on.*/
+a:active{
+    color: red;
 }
