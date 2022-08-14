@@ -37,6 +37,15 @@ h4{
 
 li{
     font-size: 20px;
+    margin-bottom: 10px;
+}
+
+li:first-child{
+    font-weight: bold;
+}
+
+li:last-child{
+    margin-bottom: 0;
 }
 
 /* Lowest priority among all priorities specifically defined for body elements.
@@ -44,27 +53,12 @@ body{
     color: red;
 } */
 
- 
-
-
-/* footer p{
-    font-size: 16px;
-} */
-
 /* Always use class over id.*/
 /* Class is more future-proof.*/
-
-/* #author{
-    font-style: italic;
-} */
 
 /* li:nth-child(2){
     font-weight: bold;
 } */
-
-li:first-child {
-    font-weight: bold;
-}
 
 .copyright{
     font-size: 16px;
