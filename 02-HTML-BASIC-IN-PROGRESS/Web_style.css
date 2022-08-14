@@ -80,7 +80,7 @@ aside{
 
 /* Select and style unvisited links. */
 a:link{
-    color: black;
+    color: blue;
 }
 
 /* Select and style visited links. */
