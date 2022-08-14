@@ -95,7 +95,8 @@ a:hover{
     text-decoration: underline orangered;
 }
 
-/* Select and style the active link, which is the link you just clicked on.*/
+/* Select and style the active link, which is the link you are clicking on.*/
 a:active{
     color: red;
+    background-color: black;
 }
