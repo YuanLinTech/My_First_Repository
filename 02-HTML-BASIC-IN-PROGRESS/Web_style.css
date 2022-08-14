@@ -88,6 +88,7 @@ body{
 .main-header{
     background-color: #f7f7f7;
     padding: 20px; /* Padding left/right/bottom/top */
+    height: 80px;
 }
 
 aside{
