@@ -46,7 +46,7 @@ li{
     font-style: italic;
 } */
 
-li:first-child{
+li:last-child{
     font-weight: bold;
 }
 
