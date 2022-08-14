@@ -46,6 +46,10 @@ li{
     font-style: italic;
 } */
 
+li:first-child{
+    font-weight: bold;
+}
+
 .copyright{
     font-size: 16px;
 }
