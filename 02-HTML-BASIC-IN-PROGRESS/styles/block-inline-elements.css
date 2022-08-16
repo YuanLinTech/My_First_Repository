@@ -9,6 +9,8 @@ hr{
 .block{
     width: 300px;
     display: block;
+    padding: 10px;
+    margin: 10px;
 }
 
 .inline{
