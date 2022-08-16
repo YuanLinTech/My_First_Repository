@@ -5,10 +5,12 @@
 hr{
     margin: 20px 0;
 }
-/* div{
 
+.block{
+    width: 300px;
+    display: block;
 }
 
-span{
-
-} */
+.inline{
+    display: inline;
+}
