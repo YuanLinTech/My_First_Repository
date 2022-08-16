@@ -39,7 +39,7 @@ h4{
 
 .main-container{
     width: 700px;
-    margin: auto;
+    margin: auto; /* Centre align the content*/
 }
 
 li{
