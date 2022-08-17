@@ -15,8 +15,8 @@
 
 .relative{
     position: relative;
-    left: 200px; /*Move the box right by 200px.*/
-    /* top: 100px; Move the box down by 100px */
+    left: 200px; /* Move the box right by 200px.*/
+    top: 100px; /* Move the box down by 100px */
 }
 
 /* Origin - Nearest positioned (non-static) ancester. 
