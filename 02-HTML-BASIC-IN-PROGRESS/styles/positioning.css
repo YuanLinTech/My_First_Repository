@@ -7,10 +7,6 @@
 
 .static{
     position: static;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
 }
 
 /* Position relative to itself.
