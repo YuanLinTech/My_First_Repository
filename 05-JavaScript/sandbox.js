@@ -40,7 +40,7 @@ console.log(gender);
 
 var teacher = {};
 console.log(teacher);
-console.log(type(teacher));
+console.log(typeof teacher);
 
 // teacher = {
 //     teacherName: 'Jing',
@@ -63,7 +63,7 @@ var Students =
 [{ studentName: 'Jing'}, 
 { studentName: 'Emily' }, 
 { studentName: 'Holly' }]
-console.log(type(Students));
+console.log(typeof Students);
 console.log(Students);
 
 var concat = 'Hello' + ' ' + 'World';
