@@ -35,8 +35,8 @@ if (isNaN(aNum))
 var age = undefined;
 var gender = null;
 
-console.log(age);
-console.log(gender);
+console.log(age); // undefined
+console.log(gender); // null
 
 var teacher = {};
 console.log(teacher); // {}
@@ -57,7 +57,7 @@ teacher.gender = 'Male';
 console.log(teacher.age); // 20
 console.log(teacher.OnDuty); // false
 console.log(teacher.gender); // Male
-console.log(teacher);
+console.log(teacher); // { age: 20, OnDuty: false, gender: 'Male' }
 
 var concat = 'Hello' + ' ' + 'World';
 console.log(concat); // Hello World
