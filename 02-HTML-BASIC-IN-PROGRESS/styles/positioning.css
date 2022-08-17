@@ -16,18 +16,19 @@
 .relative{
     position: relative;
     left: 200px; /* Move the box right by 200px.*/
+    right: 200px;
     top: 100px; /* Move the box down by 100px */
+    bottom: 100px;
+    /* Top and left take precedence over bottom and right. */
+}
+
+.absolute{
+    position: absolute;
 }
 
 /* Origin - Nearest positioned (non-static) ancester. 
 1. Must be positioned ancester.
 2. Must be the nearest positioned ancester.
-
-.absolute{
-    position: absolute;
-    top: 100px;
-    left: 300px;
-}
 
 .fixed{
     position: fixed;
