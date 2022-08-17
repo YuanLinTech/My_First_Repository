@@ -15,10 +15,10 @@
 
 .relative{
     position: relative;
-    left: 100px; /* Move the box right by 200px.*/
+    /* left: 100px; /* Move the box right by 200px.
     right: 100px;
-    top: 100px; /* Move the box down by 100px */
-    bottom: 100px;
+    top: 100px; /* Move the box down by 100px
+    bottom: 100px; */
     /* Top and left take precedence over bottom and right. */
 }
 
