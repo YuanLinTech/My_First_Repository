@@ -10,26 +10,26 @@ student1 = 'Jim';
 student2 = 'Tom';
 student3 = 'Jack';
 
-console.log(student1);
-console.log(student2);
-console.log(student3);
+console.log(student1); // Jim
+console.log(student2); // Tom
+console.log(student3); // Jack
 
 var a = 0;
 a = 'a string value';
 a = true;
-console.log(a);
+console.log(a); // true
 
 // hoisting
 car = 'Honda civic'
 console.log(car);
-var car;
+var car; // Honda civic
 
 var aNum = 3.1415926;
 aNum = NaN; // Not a number
 
 if (isNaN(aNum))
 {
-    console.log('It\'s not a Number.')
+    console.log('It\'s not a Number.') // It's not a number.
 }
 
 var age = undefined;
@@ -39,10 +39,10 @@ console.log(age);
 console.log(gender);
 
 var teacher = {};
-console.log(teacher);
-console.log(typeof teacher);
+console.log(teacher); // {}
+console.log(typeof teacher);// object
 
-// teacher = {
+// var teacher = {
 //     teacherName: 'Jing',
 //     age: 18,
 //     gender: 'Male',
@@ -52,19 +52,12 @@ console.log(typeof teacher);
 
 teacher.age = 20;
 teacher.OnDuty = false;
-teacher[gender] = 'Male';
+teacher.gender = 'Male';
 
-console.log(teacher.age);
-console.log(teacher.OnDuty);
-console.log(teacher[gender]);
+console.log(teacher.age); // 20
+console.log(teacher.OnDuty); // false
+console.log(teacher.gender); // Male
 console.log(teacher);
-
-var Students = 
-[{ studentName: 'Jing'}, 
-{ studentName: 'Emily' }, 
-{ studentName: 'Holly' }]
-console.log(typeof Students);
-console.log(Students);
 
 var concat = 'Hello' + ' ' + 'World';
 console.log(concat); // Hello World
