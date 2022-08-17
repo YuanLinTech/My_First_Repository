@@ -3,23 +3,25 @@
     width: 200px;
     height: 200px;
     text-align: center;
-
-
 }
 
 .static{
     position: static;
-    left: 100px;
-    top: 100px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
 
-.relative{/* Position relative to itself. */
+/* Position relative to itself.
+
+.relative{
     position: relative;
 }
 
-/* Origin - Nearest positioned ancester. 
+/* Origin - Nearest positioned (non-static) ancester. 
 1. Must be positioned ancester.
-2. Must be the nearest positioned ancester. */
+2. Must be the nearest positioned ancester.
 
 .absolute{
     position: absolute;
@@ -41,4 +43,4 @@
 
 .body{
     height: 2000px;
-}
+} */
