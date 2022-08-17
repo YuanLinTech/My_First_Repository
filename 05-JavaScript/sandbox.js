@@ -102,7 +102,7 @@ while (i < 10)
     i++;
 }
 
-// Requirement: Terminate when i is 5
+// Requirement: Terminate when j is 5
 var j = 0;
 while (j < 10) 
 {
