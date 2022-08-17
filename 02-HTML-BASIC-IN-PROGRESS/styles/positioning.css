@@ -24,6 +24,7 @@
 
 .absolute{
     position: absolute;
+    top: 100px;
 }
 
 /* Origin - Nearest positioned (non-static) ancester. 
