@@ -11,7 +11,7 @@
     top: 100px;
 }
 
-/* Position relative to itself.
+/* Position relative to its normal position.*/
 
 .relative{
     position: relative;
