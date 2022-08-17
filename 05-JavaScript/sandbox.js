@@ -10,30 +10,27 @@ student1 = 'Jim';
 student2 = 'Tom';
 student3 = 'Jack';
 
-// console.log(student1);
-// console.log(student2);
-// console.log(student3);
+console.log(student1);
+console.log(student2);
+console.log(student3);
 
 var a = 0;
 a = 'a string value';
 a = true;
-// console.log(a);
+console.log(a);
 
 // hoisting
-var car;
 car = 'Honda civic'
 console.log(car);
+var car;
 
 var aNum = 3.1415926;
 aNum = NaN; // Not a number
-aNum = Infinity;
 
 if (isNaN(aNum))
 {
     console.log('It\'s not a Number.')
 }
-
-// The string data type can be used to express both character and strings
 
 var age = undefined;
 var gender = null;
@@ -43,6 +40,7 @@ console.log(gender);
 
 var teacher = {};
 console.log(teacher);
+console.log(type(teacher));
 
 // teacher = {
 //     teacherName: 'Jing',
@@ -59,11 +57,14 @@ teacher[gender] = 'Male';
 console.log(teacher.age);
 console.log(teacher.OnDuty);
 console.log(teacher[gender]);
+console.log(teacher);
 
 var Students = 
 [{ studentName: 'Jing'}, 
 { studentName: 'Emily' }, 
 { studentName: 'Holly' }]
+console.log(type(Students));
+console.log(Students);
 
 var concat = 'Hello' + ' ' + 'World';
 console.log(concat); // Hello World
@@ -71,11 +72,9 @@ console.log(concat); // Hello World
 var divide = 8/4;
 var minus = 8-4;
 var times = 2*2;
-var equal = (2 == '2');
-console.log(equal); // true
 
-var equalNonStrict = (2 == '2'); // Non-strict equality
-var equalStrict = (2 === '2'); // Strict equality
+console.log(2 == '2'); // Non-strict equality. Expected output: true
+console.log(2 === '2'); // Strict equality. Expected output: false
 
 console.log(4 + 3 + '3'); // 73
 console.log(0.1 + 0.2); // 0.30000000000000004
