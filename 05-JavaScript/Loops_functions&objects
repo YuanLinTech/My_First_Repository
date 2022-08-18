@@ -73,10 +73,12 @@ var newSum = sum;
 
 // Functions can be used as variables.
 
-function firstNumthenDouble(sumFunc, num1, num2){
+function firstSumthenDouble(sumFunc, num1, num2){
     var sum = sumFunc(num1, num2);
     return sum*2;
 }
+
+console.log(firstSumthenDouble(sum, 2, 3));
 
 var PersonObject = {
     PersonName: 'Jing',
