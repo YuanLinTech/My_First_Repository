@@ -58,7 +58,6 @@ console.log(null === null); // true
 var foo2 = null;
 console.log(foo2); //null
 console.log(typeof(foo2)); // object
-console.log(typeof())
 
 // SyntaxError: Invalid left-hand side in assignment
 // null = 'value'; // ReferenceError
