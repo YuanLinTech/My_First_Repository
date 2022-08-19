@@ -50,10 +50,21 @@ console.log(plus1(1));// undefined The return value of function plus1 is not def
 var t = 1;
 console.log(t); // 1
 
+console.log(null === undefined); // false
+console.log(null == undefined); // true
+console.log(null === null); // true
+
 // foo2 has been initialised but it has no value.
 var foo2 = null;
 console.log(foo2); //null
 console.log(typeof(foo2)); // object
+console.log(typeof())
+
+// SyntaxError: Invalid left-hand side in assignment
+// null = 'value'; // ReferenceError
+
+undefined = 'value'; 
+console.log(undefined); // undefined
 
 var teacher = {};
 console.log(teacher); // {}
