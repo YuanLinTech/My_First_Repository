@@ -32,11 +32,28 @@ if (isNaN(aNum))
     console.log('It\'s not a Number.') // It's not a number.
 }
 
-var age = undefined;
-var gender = null;
+// foo does not exist. It is not defined and has never been initialized:
+console.log(typeof(foo)); //undefined
 
-console.log(age); // undefined
-console.log(gender); // null
+// foo1 is known to exist but it has never been initialized;
+var foo1;
+console.log(foo1); //undefined
+console.log(typeof(foo1)); //undefined
+
+function plus1(i)
+{
+    i++;
+}
+
+console.log(plus1(1));// undefined The return value of function plus1 is not defined, therefore it returns the value "undefined".
+
+var t = 1;
+console.log(t); // 1
+
+// foo2 has been initialised but it has no value.
+var foo2 = null;
+console.log(foo2); //null
+console.log(typeof(foo2)); // object
 
 var teacher = {};
 console.log(teacher); // {}
