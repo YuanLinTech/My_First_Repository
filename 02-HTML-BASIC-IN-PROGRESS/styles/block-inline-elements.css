@@ -15,7 +15,7 @@ hr{
 }
 
 .second-element{
-    position: relative;
+    position: absolute;
     left: 500px;
 }
 
