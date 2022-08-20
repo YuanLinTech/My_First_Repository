@@ -117,7 +117,7 @@ button{
     padding: 10px;
     width: 90px;
     position: absolute;
-    left: 100px;
+    right: 50px;
 }
 
 /* Select and style unvisited links. */
