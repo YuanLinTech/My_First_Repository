@@ -36,14 +36,14 @@ Origin - Nearest positioned (non-static) ancester.
 /* Positioning relative to the viewport.*/
 .fixed{
     position: fixed;
-    top:0;
+    top:0; /* Fix the box at the top-left corner of the viewport */
+    left: 45%; /* Center-align the element*/
 }
 
-/* .sticky{
+.sticky {
     position: sticky;
-    top: 50px;
-    left: 0;
-}*/
+    top: 0; /* Position the element relatively until the the viewport was scrolled such that the element's top reach the top of the viewport*/
+}
 
 body{
     height: 2000px;
