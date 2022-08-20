@@ -30,6 +30,7 @@ Origin - Nearest positioned (non-static) ancester.
 .absolute{
     position: absolute;
     top: 100px;
+    left: 300px;
 }
 
 /* Positioning relative to the viewport.*/
