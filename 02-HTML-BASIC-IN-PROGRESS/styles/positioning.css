@@ -35,11 +35,9 @@ Origin - Nearest positioned (non-static) ancester.
 /* Positioning relative to the viewport.*/
 .fixed{
     position: fixed;
-    top: 0;
-    left: 45%;
 }
 
-.sticky{
+/* .sticky{
     position: sticky;
     top: 50px;
     left: 0;
@@ -47,4 +45,4 @@ Origin - Nearest positioned (non-static) ancester.
 
 .body{
     height: 2000px;
-}
+} */
