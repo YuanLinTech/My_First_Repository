@@ -23,7 +23,7 @@ hr{
     display: inline;
     margin: 10px;
     padding: 10px;
-    /* Heights and widths do not apply to inline elements.*/
+    /* Heights and widths do not apply to inline elements. */
     width: 300px;
     height: 300px;
 }
