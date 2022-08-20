@@ -11,7 +11,7 @@
     top: 100px;
 }
 
-/* Position relative to its normal position.*/
+/* Positioning relative to its normal position.*/
 
 .relative{
     position: relative;
@@ -22,15 +22,17 @@
     /* Top and left take precedence over bottom and right. */
 }
 
+/* Positioning relative to its nearest positioned ancester.
+Origin - Nearest positioned (non-static) ancester. 
+1. Must be positioned ancester.
+2. Must be the nearest positioned ancester.*/
+
 .absolute{
     position: absolute;
     top: 100px;
 }
 
-/* Origin - Nearest positioned (non-static) ancester. 
-1. Must be positioned ancester.
-2. Must be the nearest positioned ancester.
-
+/* Positioning relative to the viewport.*/
 .fixed{
     position: fixed;
     top: 0;
@@ -45,4 +47,4 @@
 
 .body{
     height: 2000px;
-} */
+}
