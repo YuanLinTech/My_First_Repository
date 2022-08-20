@@ -110,6 +110,14 @@ aside{
     background-color: #f7f7f7;
     border: 5px solid #1098ab;
     width: 500px;
+    position: relative;
+}
+
+button{
+    padding: 10px;
+    width: 90px;
+    position: absolute;
+    left: 100px;
 }
 
 /* Select and style unvisited links. */
