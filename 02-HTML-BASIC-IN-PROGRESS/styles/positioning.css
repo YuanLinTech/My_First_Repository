@@ -36,14 +36,15 @@ Origin - Nearest positioned (non-static) ancester.
 /* Positioning relative to the viewport.*/
 .fixed{
     position: fixed;
+    top:0;
 }
 
 /* .sticky{
     position: sticky;
     top: 50px;
     left: 0;
-}
+}*/
 
 .body{
     height: 2000px;
-} */
+}
