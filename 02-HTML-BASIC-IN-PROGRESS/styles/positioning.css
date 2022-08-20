@@ -42,7 +42,7 @@ Origin - Nearest positioned (non-static) ancester.
 
 .sticky {
     position: sticky;
-    top: 0; /* Position the element relatively until the the viewport was scrolled such that the element's top reach the top of the viewport*/
+    top: 0; /* Position the element relatively until the the viewport is scrolled so that the top of the element reaches the top of the viewport.*/
 }
 
 body{
