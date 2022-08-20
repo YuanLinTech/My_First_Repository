@@ -118,6 +118,7 @@ button{
     width: 90px;
     position: absolute;
     right: 50px;
+    bottom: 5px;
 }
 
 /* Select and style unvisited links. */
