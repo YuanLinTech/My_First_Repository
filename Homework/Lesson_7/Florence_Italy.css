@@ -28,9 +28,9 @@
 .div_band--color-cyan{
     position: absolute;
     top: 284px;
-    left: 0px;
-    color: #00FFFF;
-    width: 10px;
+    left: 7px;
+    background-color: #00FFFF;
+    width: 4px;
     height: 73px;
     z-index: 1;
 }
