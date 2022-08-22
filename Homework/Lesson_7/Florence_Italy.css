@@ -1,0 +1,11 @@
+.img__Florence{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.block__place{
+    color: white;
+    z-index: 1;
+}
