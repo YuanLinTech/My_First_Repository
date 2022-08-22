@@ -15,12 +15,22 @@
     z-index: 1;
 }
 
-.div--color-cyan{
+.div_text--color-cyan{
     position: absolute;
     top: 285px;
     left: 50px;
     color: #00FFFF;
     font-size: 16px;
     font-family: sans-serif;
+    z-index: 1;
+}
+
+.div_band--color-cyan{
+    position: absolute;
+    top: 284px;
+    left: 0px;
+    color: #00FFFF;
+    width: 10px;
+    height: 73px;
     z-index: 1;
 }
