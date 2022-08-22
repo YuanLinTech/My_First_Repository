@@ -1,11 +1,16 @@
 .img__Florence{
     position: absolute;
+    width: 750px;
     top: 0px;
     left: 0px;
     z-index: 0;
 }
 
-.block__place{
+.div--color-white{
+    position: absolute;
+    top: 410px;
+    left: 0px;
     color: white;
+    font-size: 50px;
     z-index: 1;
 }
