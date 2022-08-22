@@ -7,7 +7,7 @@
 
 .div--color-white{
     position: absolute;
-    top: 310px;
+    top: 315px;
     left: 50px;
     color: white;
     font-size: 47px;
@@ -28,9 +28,38 @@
 .div_band--color-cyan{
     position: absolute;
     top: 284px;
-    left: 7px;
+    left: 8px;
     background-color: #00FFFF;
     width: 4px;
     height: 73px;
+    z-index: 1;
+}
+
+.button--color-blue{
+    position: absolute;
+    top: 325px;
+    left: 558px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #3366ff;
+    border-radius: 20px;
+    border: 0px;
+    width: 130px;
+    height: 40px;
+    z-index: 1;
+}
+
+.div_text-color-black{
+    position: absolute;
+    top: 45px;
+    left: 628px;
+    font-family: sans-serif;
+    font-size: 5px;
+    background-color: white;
+    border-radius: 3px;
+    border: 0px;
+    width: 60px;
+    height: 20px;
     z-index: 1;
 }
