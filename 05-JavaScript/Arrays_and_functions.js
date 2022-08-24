@@ -50,7 +50,7 @@ cars[1] = "Volvo";
 cars[2] = "BMW";
 console.log(cars); // expected output: ['Saab', 'Volvo', 'BMW']
 
-// const cars = ["Saab", "Volvo", "BMW"]; Identifier 'cars' has already been declared
+// const cars = ["Saab", "Volvo", "BMW"]; // SyntaxError: Identifier 'cars' has already been declared
 // let car = cars[0];
 
 const cars1 = ["Saab", "Volvo", "BMW"];
