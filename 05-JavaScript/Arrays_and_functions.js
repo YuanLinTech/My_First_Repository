@@ -1,25 +1,28 @@
 const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 
 console.log(animals.slice());
-// expected output: Array ['ant', 'bison', 'camel', 'duck', 'elephant']
+// expected output: ['ant', 'bison', 'camel', 'duck', 'elephant']
 
 console.log(animals.slice(2));
-// expected output: Array ["camel", "duck", "elephant"]
+// expected output: ["camel", "duck", "elephant"]
 
 console.log(animals.slice(2, 4));
-// expected output: Array ["camel", "duck"]
+// expected output: ["camel", "duck"]
 
 console.log(animals.slice(1, 5));
-// expected output: Array ["bison", "camel", "duck", "elephant"]
+// expected output: ["bison", "camel", "duck", "elephant"]
 
-console.log(animals.slice(-2));
-// expected output: Array ["duck", "elephant"]
+console.log(animals.slice(-2)); // Last two elements
+// expected output: ["duck", "elephant"]
 
-console.log(animals.slice(2, -1));
-// expected output: Array ["camel", "duck"]
+console.log(animals.slice(2, -1)); // Third element through to the second to last element
+// expected output: ["camel", "duck"]
 
-console.log(animals.slice());
-// expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+const car = Array("Saab", "Volvo", "BMW");
+console.log(car); // expected output: ['Saab', 'Volvo', 'BMW']
+
+const cars = new Array("Saab", "Volvo", "BMW");
+console.log(cars); // expected output: ['Saab', 'Volvo', 'BMW']
 
 // This example function accepts any number of string arguments and returns the longest one.
 function longestString() {
