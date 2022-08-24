@@ -3,5 +3,7 @@ var carName;
 console.log(carName);// Expected output: Volvo
 
 CarName = "Saab";
-let CarName;
+// const CarName; SyntaxError: Missing initializer in const declaration
+// let carName; ReferenceError: Cannot access 'CarName' before initialization
+var CarName;
 console.log(CarName);
