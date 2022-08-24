@@ -30,33 +30,10 @@ aNum = NaN; // Not a number
 if (isNaN(aNum))
 {
     console.log('It\'s not a Number.') // It's not a number.
-}
-
-// Create the array "fruits" with 2 elements: 'Apple' and 'Banana'
-const fruits1 = ['Apple', 'Banana'];
-
-console.log(fruits1.length);
-console.log(fruits1[0]);     
-
-// Create the array "fruits" with 2 undefined elements.
-const fruits2 = new Array(2);
-
-console.log(fruits2.length); //
-console.log(fruits2[0]);     
-
-// Create the array "fruits" with 2 elements: 'Apple' and 'Banana'
-const fruits3 = new Array('Apple', 'Banana');
-
-console.log(fruits3.length); // 2
-console.log(fruits3[0]);     
-
-// Create the array "fruits" with 2 elements: 'Apple' and 'Banana'
-const fruits4 = Array('Apple', 'Banana');
-
-console.log(fruits4.length); // 2
-console.log(fruits4[0]);     
+}  
 
 // foo does not exist. It is not defined and has never been initialized:
+console.log(foo); // ReferenceError: foo is not defined
 console.log(typeof(foo)); //undefined
 
 // foo1 is known to exist but it has never been initialized;

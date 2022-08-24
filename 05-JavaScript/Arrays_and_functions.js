@@ -18,11 +18,81 @@ console.log(animals.slice(-2)); // Last two elements
 console.log(animals.slice(2, -1)); // Third element through to the second to last element
 // expected output: ["camel", "duck"]
 
-const car = Array("Saab", "Volvo", "BMW");
-console.log(car); // expected output: ['Saab', 'Volvo', 'BMW']
+// Create the array "fruits" with 2 elements: 'Apple' and 'Banana'
+const fruits1 = ['Apple', 'Banana'];
 
-const cars = new Array("Saab", "Volvo", "BMW");
+console.log(fruits1.length); // expected output: 2
+console.log(fruits1[0]); // expected output: Apple
+
+// Create the array "fruits" with 2 undefined elements.
+const fruits2 = new Array(2);
+
+console.log(fruits2.length); // expected output: 2
+console.log(fruits2[0]); // expected output: undefined
+
+// Create the array "fruits" with 2 elements: 'Apple' and 'Banana'
+const fruits3 = new Array('Apple', 'Banana');
+
+console.log(fruits3); // expected output: ['Apple', 'Banana']
+console.log(fruits3.length); // expected output: 2
+console.log(fruits3[0]); // expected output: Apple
+
+// Create the array "fruits" with 2 elements: 'Apple' and 'Banana'
+const fruits4 = Array('Apple', 'Banana');
+
+console.log(fruits4); // expected output: ['Apple', 'Banana']
+console.log(fruits4.length); // expected output: 2
+console.log(fruits4[0]); // expected output: Apple
+
+const cars = [];
+cars[0] = "Saab";
+cars[1] = "Volvo";
+cars[2] = "BMW";
 console.log(cars); // expected output: ['Saab', 'Volvo', 'BMW']
+
+// const cars = ["Saab", "Volvo", "BMW"]; Identifier 'cars' has already been declared
+// let car = cars[0];
+
+const cars1 = ["Saab", "Volvo", "BMW"];
+let car1 = cars1[0];
+console.log(car1); // expected output: Saab
+
+const cars2 = ["Saab", "Volvo", "BMW"];
+cars2[0] = "Opel";
+console.log(cars2); // expected output: ['Opel', 'Volvo', 'BMW']
+
+const Fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = Fruits[-1];
+console.log(fruit); // undefined
+
+function func1(a, b, c) {
+    console.log(arguments[0]);
+    // expected output: 1
+
+    console.log(arguments[1]);
+    // expected output: 2
+
+    console.log(arguments[2]);
+    // expected output: 3
+}
+func1(1, 2, 3); 
+// expected output:
+// 1
+// 2
+// 3
+
+function myFunction(x, y, z) { 
+    return x+y+z;
+}
+const args = [0, 1, 2];
+console.log(myFunction(...args));
+
+
+const parts = ['shoulders', 'knees'];
+const lyrics = ['head', ...parts, 'and', 'toes'];
+console.log(lyrics);
+output: ["head", "shoulders", "knees", "and", "toes"]
+
 
 // This example function accepts any number of string arguments and returns the longest one.
 function longestString() {
@@ -35,14 +105,16 @@ function longestString() {
     return longest;
 }
 
-console.log(longestString("integrity", "decency", "authenticity"))
-console.log(typeof arguments);
-console.log(typeof arguments[0]);
+console.log(longestString("integrity", "decency", "authenticity")) // expected output: authenticity
+console.log(typeof arguments); // expected output: object
+console.log(typeof arguments[0]); // expected output: object
 
-for (var i = 0; i < 10, i++;)
+for (let i = 0; i < 10; i++)
 {
-    console.log('Hello');
+    console.log(i*i);
 }
+
+console.log(i);
 
 var i = 0;
 
@@ -161,7 +233,7 @@ function update(person){
     person.age+=1;
 }
 
-console.age(person);
+console.log(person);
 
 function increaseAgeByOne(person){ // Does not change the values of person.
 
