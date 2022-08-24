@@ -69,6 +69,9 @@ var teacher = {};
 console.log(teacher); // {}
 console.log(typeof teacher);// object
 
+var arr = [1,2,3];
+console.log(typeof arr);// object
+
 // var teacher = {
 //     teacherName: 'Jing',
 //     age: 18,
