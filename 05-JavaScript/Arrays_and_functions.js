@@ -84,15 +84,32 @@ func1(1, 2, 3);
 function myFunction(x, y, z) { 
     return x+y+z;
 }
-const args = [0, 1, 2];
-console.log(myFunction(...args));
+const args = [1, 2, 3];
+console.log(myFunction(...args)); // expected output: 6
 
+const myHonda = { color: 'red', wheels: 4, engine: { cylinders: 4, size: 2.2 } };
+// const myCar = [...myHonda, 2, 'cherry condition', 'purchased 1997']; TypeError: myHonda is not iterable
+const myCar = [myHonda, 2, 'cherry condition', 'purchased 1997'];
+console.log(myCar); 
+// Expected output: 
+// [
+//   { color: 'red', wheels: 4, engine: { cylinders: 4, size: 2.2 } },
+//    2,
+//    'cherry condition',
+//    'purchased 1997'
+// ]
+const newCar = myCar.slice(0, 3);
+console.log(newCar);
+// Expected output: 
+//[
+//{ color: 'red', wheels: 4, engine: { cylinders: 4, size: 2.2 } },
+//2,
+//    'cherry condition'
+//]
 
 const parts = ['shoulders', 'knees'];
 const lyrics = ['head', ...parts, 'and', 'toes'];
-console.log(lyrics);
-output: ["head", "shoulders", "knees", "and", "toes"]
-
+console.log(lyrics); // expected output: ["head", "shoulders", "knees", "and", "toes"]
 
 // This example function accepts any number of string arguments and returns the longest one.
 function longestString() {
@@ -109,12 +126,12 @@ console.log(longestString("integrity", "decency", "authenticity")) // expected o
 console.log(typeof arguments); // expected output: object
 console.log(typeof arguments[0]); // expected output: object
 
-for (let i = 0; i < 10; i++)
+for (let x = 0; x < 10; x++)
 {
-    console.log(i*i);
+    console.log(x*x);
 }
 
-console.log(i);
+// console.log(x); // ReferenceError: x is not defined
 
 var i = 0;
 
@@ -154,7 +171,7 @@ console.log(t); // 1
 /* Find the first ten numbers between 0 and 100 that are multiples of 4 but not multiples of 5, 
 and print out the numbers in an array. */
 const res = [];
-for (var i = 0; i <= 100; i++) 
+for (let i = 0; i <= 100; i++) 
 {
     if (res.length == 10) {
         break;
