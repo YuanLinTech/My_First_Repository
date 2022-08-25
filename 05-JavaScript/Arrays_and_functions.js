@@ -1,3 +1,30 @@
+var names = ['Jing', 'Emily', 'Holly', 'Jack'];
+
+// push and pop adds or removes the last element
+names.push('Tom'); // Add the element 'Tom' to the back of the array
+console.log(names); // Expected output: [ 'Jing', 'Emily', 'Holly', 'Jack', 'Tom' ]
+console.log(names.length); // Expected output: 5
+console.log(names.pop()); // Remove the last element from the array and return the removed element. Expected output: 'Tom'
+console.log(names.length); // Expected output: 4
+
+// unshift and shift adds or removes the first element
+names.unshift('Tom'); // Add Tom to the beginning of the array.
+console.log(names); // Expected output: [ 'Tom', 'Jing', 'Emily', 'Holly', 'Jack' ]
+console.log(names.length); // Expected output: 5
+console.log(names.shift()); // Remove the first element from the array and return the removed element. Expected output: 'Tom'
+console.log(names.length); // Expected output: 4
+console.log(names); // Expected output: [ 'Jing', 'Emily', 'Holly', 'Jack']
+
+const array1 = [1, 2, 3];
+
+const firstElement = array1.shift();
+
+console.log(array1);
+// expected output: Array [2, 3]
+
+console.log(firstElement);
+// expected output: 1
+
 const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 
 console.log(animals.slice());

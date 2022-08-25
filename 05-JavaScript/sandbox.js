@@ -21,8 +21,8 @@ console.log(a); // true
 
 // hoisting
 car = 'Honda civic'
-console.log(car);
-var car; // Honda civic
+console.log(car); // Honda civic
+var car; 
 
 var aNum = 3.1415926;
 aNum = NaN; // Not a number
@@ -33,7 +33,7 @@ if (isNaN(aNum))
 }  
 
 // foo does not exist. It is not defined and has never been initialized:
-console.log(foo); // ReferenceError: foo is not defined
+// console.log(foo); // ReferenceError: foo is not defined
 console.log(typeof(foo)); //undefined
 
 // foo1 is known to exist but it has never been initialized;
@@ -102,7 +102,9 @@ console.log(2 == '2'); // Non-strict equality. Expected output: true
 console.log(2 === '2'); // Strict equality. Expected output: false
 console.log(1 == true); // true
 
-console.log(4 + 3 + '3'); // 73
+console.log(4 + 3 +'3'); // 4 + 3 + '3' -> 7 + '3' -> '7' + '3' = '73'
+console.log('4'+ 3 + 3); // '4' + 3 + 3 -> '4' + '3' + 3 -> '43' + 3 -> '43' + '3' -> '433' 
+
 console.log(0.1 + 0.2); // 0.30000000000000004
 
 console.log(1 + null) // 1
