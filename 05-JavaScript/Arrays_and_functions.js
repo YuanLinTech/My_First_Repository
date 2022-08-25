@@ -4,16 +4,28 @@ var names = ['Jing', 'Emily', 'Holly', 'Jack'];
 names.push('Tom'); // Add the element 'Tom' to the back of the array
 console.log(names); // Expected output: [ 'Jing', 'Emily', 'Holly', 'Jack', 'Tom' ]
 console.log(names.length); // Expected output: 5
-console.log(names.pop()); // Remove the last element from the array and return the removed element. Expected output: 'Tom'
+console.log(names.pop()); // Remove the last element from the array and return the removed element. Expected output: Tom
 console.log(names.length); // Expected output: 4
 
 // unshift and shift adds or removes the first element
 names.unshift('Tom'); // Add Tom to the beginning of the array.
 console.log(names); // Expected output: [ 'Tom', 'Jing', 'Emily', 'Holly', 'Jack' ]
 console.log(names.length); // Expected output: 5
-console.log(names.shift()); // Remove the first element from the array and return the removed element. Expected output: 'Tom'
+console.log(names.shift()); // Remove the first element from the array and return the removed element. Expected output: Tom
 console.log(names.length); // Expected output: 4
 console.log(names); // Expected output: [ 'Jing', 'Emily', 'Holly', 'Jack']
+
+names[2] = 'Tom';
+console.log(names[2]); // Expected output: Tom
+console.log(names); // Expected output: [ 'Jing', 'Emily', 'Tom', 'Jack' ]
+
+names[101] = 'Mary';
+console.log(names.length); // Expected output: 102
+console.log(names[99]); // Elements with index 4 - 100 are undefined. Expected output: undefined
+
+var twoDArray = [[1,2,3],[4,5,6],[7,8,9]];
+console.log(twoDArray[1]); // Expected output: [4,5,6]
+console.log(twoDArray[1][2]); // Expected output: 6
 
 const array1 = [1, 2, 3];
 
