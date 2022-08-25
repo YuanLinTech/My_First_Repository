@@ -12,9 +12,15 @@ var m = 1;
 var m = 2;
 console.log(m); // Expected output: 2
 
-const n = 1;
-// const n = 2; // SyntaxError: Identifier 'n' has already been declared
+let n = 1;
+// let n = 2; // SyntaxError: Identifier 'n' has already been declared
 console.log(n); // Expected output: 1
+n = 2;
+console.log(n); // Expected output: 2
+
+const k = 1;
+// const k = 2; // SyntaxError: Identifier 'k' has already been declared
+console.log(k); // Expected output: 1
 
 // var x = 5; // Initialize x
 // var y = 7; // Initialize y
@@ -24,9 +30,9 @@ var x = 5; // Initialize x
 console.log(x + " " + y); // Output: 5 undefined
 var y = 7; // Initialize y
 
-z = 5; // ReferenceError: Cannot access 'z' before initialization
-console.log(z);
-const z = 7; // Initialize z
+// z = 5; // ReferenceError: Cannot access 'z' before initialization
+// console.log(z);
+// const z = 7; // Initialize z
 
 // const PI; // SyntaxError: Missing initializer in const declaration
 // PI = 3.14159265359;

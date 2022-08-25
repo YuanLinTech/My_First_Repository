@@ -150,6 +150,39 @@ const parts = ['shoulders', 'knees'];
 const lyrics = ['head', ...parts, 'and', 'toes'];
 console.log(lyrics); // expected output: ["head", "shoulders", "knees", "and", "toes"]
 
+var age = 18;
+
+if (age < 18){
+    console.log('You are under 18.');
+}
+else{
+    console.log('You are over 18.');
+}
+
+// The following statement is equivalent to the if-else statement written above
+console.log(age < 18 ? 'You are under 18.': 'You are over 18.');
+
+const age = 26;
+if (age >= 21){
+    const beverage = "Beer";
+}
+else{
+    const beverage = "Beer";
+}
+console.log(beverage); // Expected output: "Beer"
+
+// The following statements are equivalent to the if-else statement written above
+const beverage = age >= 21 ? "Beer" : "Juice";
+console.log(beverage); // Expected output: "Beer"
+
+// Var = condition ? exprIfTrue : exprIfFalse is equivalent to 
+// if (condition){
+//     Var = exprIfTrue;
+// }
+// else{
+//     Var = exprIfFalse;
+// }
+
 // This example function accepts any number of string arguments and returns the longest one.
 function longestString() {
     let longest = '';
