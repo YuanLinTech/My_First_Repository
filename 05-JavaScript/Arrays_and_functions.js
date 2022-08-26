@@ -257,7 +257,7 @@ for (let i = 0; i <= 100; i++)
 console.log(res);
 
 /* A function that finds the first ten numbers between 0 and param3 that are multiples of param1 but not multiples of param2, 
-and print out the numbers in an array. */
+and prints out the numbers in an array. */
 function firstTen(param1, param2, param3)
 {
     const res = [];
