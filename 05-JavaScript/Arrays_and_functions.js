@@ -232,15 +232,6 @@ while (j < 10)
     j++;
 }
 
-function plus1(i) {
-    i++;
-}
-
-console.log(plus1(1));// undefined The return value of function plus1 is not defined, therefore it returns the value "undefined".
-
-var t = 1;
-console.log(t); // Expected output: 1
-
 /* Find the first ten numbers between 0 and 100 that are multiples of 4 but not multiples of 5, 
 and print out the numbers in an array. */
 const res = [];
@@ -294,7 +285,6 @@ console.log(typeof(firstTen(4, 5, 100))); // Expected output: object
 //     }
 // }
 
-
 // Function expression
 var sum = function(num1, num2){
     return num1+num2;
@@ -327,15 +317,13 @@ aString = 'unknown';
 console.log(aString); // Expected output: unknown
 console.log(anotherString); // Expected output: know
 
-// Function programming - interactions between functions
-// Immutable functions (pure functions) - no side effects (don't change something that does not belong to the function)
-
 var man = {
     name: 'Jing',
     age: 18,
     oocupation: 'dev'
 }
 
+// Objects used as function parameters are passed by reference
 function update(person){
     // Increment a person's age by one
     person.age+=1;
@@ -355,6 +343,17 @@ function increaseAgeByOne(person){ // Does not change the items of "person".
 
 console.log(increaseAgeByOne(man)); // Expected output: { name: 'Jing', age: 20 }
 console.log(man); // Expected output: { name: 'Jing', age: 19, oocupation: 'dev' }
+
+// Primitive values used as function parameters are passed by reference
+function plus1(i) {
+    i++;
+}
+
+console.log(plus1(1)); // Expected output: undefined The return value of function "plus1" is not defined, therefore it returns the value "undefined".
+
+var t = 1;
+plus1(t);
+console.log(t); // Expected output: 1
 
 for (var key in man){
     console.log(key+' '+man[key]);
