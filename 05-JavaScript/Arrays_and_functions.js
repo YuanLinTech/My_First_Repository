@@ -239,7 +239,7 @@ function plus1(i) {
 console.log(plus1(1));// undefined The return value of function plus1 is not defined, therefore it returns the value "undefined".
 
 var t = 1;
-console.log(t); // 1
+console.log(t); // Expected output: 1
 
 /* Find the first ten numbers between 0 and 100 that are multiples of 4 but not multiples of 5, 
 and print out the numbers in an array. */
@@ -276,7 +276,7 @@ function firstTen(param1, param2, param3)
 }
 
 console.log(firstTen(4,5,100));
-console.log(typeof(firstTen(4, 5, 100)));
+console.log(typeof(firstTen(4, 5, 100))); // Expected output: undefined
 
 var sum = function(num1, num2){
     return num1+num2;
@@ -285,13 +285,13 @@ var sum = function(num1, num2){
 var newSum = sum;
 
 // Functions can be used as variables.
-
+// Add the values of num1 and num2, multiply the sum by 2, and return the result.
 function firstSumthenDouble(sumFunc, num1, num2){
     var sum = sumFunc(num1, num2);
     return sum*2;
 }
 
-console.log(firstSumthenDouble(sum, 2, 3));
+console.log(firstSumthenDouble(sum, 2, 3)); // Expected output: 10
 
 var PersonObject = {
     PersonName: 'Jing',
@@ -306,26 +306,27 @@ var aString = 'know'; // Pass by value
 var anotherString = aString; // Copy the value of aString to anotherString
 
 aString = 'unknown';
-console.log(aString);
-console.log(anotherString);
+console.log(aString); // Expected output: unknown
+console.log(anotherString); // Expected output: know
 
 // Function programming - interactions between functions
 // Immutable functions (pure functions) - no side effects (don't change something that does not belong to the function)
 
-var person = {
+var man = {
     name: 'Jing',
     age: 18,
     oocupation: 'dev'
 }
 
 function update(person){
-    // Update person's age to +1
+    // Increment a person's age by one
     person.age+=1;
 }
 
-console.log(person);
+update(man);
+console.log(man); // Expected output: { name: 'Jing', age: 19, oocupation: 'dev' }
 
-function increaseAgeByOne(person){ // Does not change the values of person.
+function increaseAgeByOne(person){ // Does not change the items of "person".
 
     var myPerson = {
         name: person.name,
@@ -333,6 +334,9 @@ function increaseAgeByOne(person){ // Does not change the values of person.
     }
     return myPerson;
 }
+
+console.log(increaseAgeByOne(man)); // Expected output: { name: 'Jing', age: 20 }
+console.log(man); // Expected output: { name: 'Jing', age: 19, oocupation: 'dev' }
 
 for (var key in person){
     console.log(key);
