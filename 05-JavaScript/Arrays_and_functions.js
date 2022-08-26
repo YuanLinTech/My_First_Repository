@@ -150,30 +150,30 @@ const parts = ['shoulders', 'knees'];
 const lyrics = ['head', ...parts, 'and', 'toes'];
 console.log(lyrics); // expected output: ["head", "shoulders", "knees", "and", "toes"]
 
-var age = 18;
-
-if (age < 18){
-    console.log('You are under 18.');
-}
-else{
-    console.log('You are over 18.');
-}
-
-// The following statement is equivalent to the if-else statement written above
-console.log(age < 18 ? 'You are under 18.': 'You are over 18.');
-
-const age = 26;
+var age = 26;
 if (age >= 21){
-    const beverage = "Beer";
+    var beverage = "Beer";
 }
 else{
-    const beverage = "Beer";
+    var beverage = "Beer";
 }
 console.log(beverage); // Expected output: "Beer"
 
 // The following statements are equivalent to the if-else statement written above
-const beverage = age >= 21 ? "Beer" : "Juice";
+beverage = age >= 21 ? "Beer" : "Juice";
 console.log(beverage); // Expected output: "Beer"
+
+var age = 18;
+
+if (age < 18) {
+    console.log('You are under 18.');
+}
+else {
+    console.log('You are over 18.');
+}
+
+// The following statement is equivalent to the if-else statement written above
+console.log(age < 18 ? 'You are under 18.' : 'You are over 18.');
 
 // Var = condition ? exprIfTrue : exprIfFalse is equivalent to 
 // if (condition){
@@ -219,12 +219,13 @@ while (i < 10)
     i++;
 }
 
-// Requirement: Terminate when j is 5
+// Requirement: When j is 5, print out j and terminate the loop
 var j = 0;
 while (j < 10) 
 {
     if (j === 5) 
     {
+        console.log(j);
         break;
     }
     console.log(j);
