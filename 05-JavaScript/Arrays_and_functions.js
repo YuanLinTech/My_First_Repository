@@ -258,6 +258,8 @@ console.log(res);
 
 /* A function that finds the first ten numbers between 0 and param3 that are multiples of param1 but not multiples of param2, 
 and prints out the numbers in an array. */
+
+// Function declaration
 function firstTen(param1, param2, param3)
 {
     const res = [];
@@ -265,19 +267,35 @@ function firstTen(param1, param2, param3)
     {
         if(res.length == 10)
         {
-            break;
+            return res;
         }
 
         if ((i % param1 === 0) && (i % param2 != 0)){
             res.push(i);
         }
     }
-    console.log(res);
 }
 
 console.log(firstTen(4,5,100));
-console.log(typeof(firstTen(4, 5, 100))); // Expected output: undefined
+console.log(typeof(firstTen(4, 5, 100))); // Expected output: object
 
+// Function expression
+
+// var FirstTenExpression = function firstTen(param1, param2, param3) {
+//     const res = [];
+//     for (var i = 0; i <= param3; i++) {
+//         if (res.length == 10) {
+//             return res;
+//         }
+
+//         if ((i % param1 === 0) && (i % param2 != 0)) {
+//             res.push(i);
+//         }
+//     }
+// }
+
+
+// Function expression
 var sum = function(num1, num2){
     return num1+num2;
 }
@@ -338,6 +356,11 @@ function increaseAgeByOne(person){ // Does not change the items of "person".
 console.log(increaseAgeByOne(man)); // Expected output: { name: 'Jing', age: 20 }
 console.log(man); // Expected output: { name: 'Jing', age: 19, oocupation: 'dev' }
 
-for (var key in person){
-    console.log(key);
+for (var key in man){
+    console.log(key+' '+man[key]);
 }
+
+// Output: 
+// name Jing
+// age 19
+// oocupation dev
