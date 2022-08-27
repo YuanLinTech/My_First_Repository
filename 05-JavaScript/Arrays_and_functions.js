@@ -296,13 +296,13 @@ var sum = function(num1, num2){
 }
 
 // Use the variable "sum" as a function
-console.log(sum(1,2)); 
+console.log(sum(1,2)); // Expected output: 3
 
 // Anonymous function expression
 const x = function(a, b) {return a * b;}
 // Use the variable z as a function
 let z = x(4, 3);
-console.log(z);
+console.log(z); // Expected output: 12
 
 // Named function expression
 const myFunc = function square(num){
