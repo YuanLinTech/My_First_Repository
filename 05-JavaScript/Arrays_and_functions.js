@@ -359,6 +359,21 @@ function increaseAgeByOne(person){ // Does not change the items of "person".
     return myPerson;
 }
 
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    id: 5566,
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+FullName = person.fullName();
+console.log(FullName); // Output: John Doe
+// Access the function definition
+
+console.log(person.fullName); // Output: [Function: fullName]
+
 console.log(increaseAgeByOne(man)); // Expected output: { name: 'Jing', age: 20 }
 console.log(man); // Expected output: { name: 'Jing', age: 19, occupation: 'dev' }
 
