@@ -137,6 +137,11 @@ console.log(myCar);
 //    'cherry condition',
 //    'purchased 1997'
 // ]
+
+console.log(Array.isArray(myHonda)); // false
+console.log(Array.isArray(myCar));  // true
+console.log(twoDArray instanceof Array); // true
+
 const newCar = myCar.slice(0, 3);
 console.log(newCar);
 // Expected output: 
@@ -285,18 +290,30 @@ console.log(typeof(firstTen(4, 5, 100))); // Expected output: object
 //     }
 // }
 
-// Function expression
+// Anonymous function expression
 var sum = function(num1, num2){
     return num1+num2;
 }
 
-var newSum = sum;
+// Use the variable "sum" as a function
+console.log(sum(1,2)); 
+
+// Anonymous function expression
+const x = function(a, b) {return a * b;}
+// Use the variable z as a function
+let z = x(4, 3);
+console.log(z);
+
+// Named function expression
+const myFunc = function square(num){
+    return num*num;
+}
 
 // Functions can be used as variables.
 // Add the values of num1 and num2, multiply the sum by 2, and return the result.
 function firstSumthenDouble(sumFunc, num1, num2){
-    var sum = sumFunc(num1, num2);
-    return sum*2;
+    const result = sumFunc(num1, num2);
+    return result*2;
 }
 
 console.log(firstSumthenDouble(sum, 2, 3)); // Expected output: 10
@@ -320,17 +337,17 @@ console.log(anotherString); // Expected output: know
 var man = {
     name: 'Jing',
     age: 18,
-    oocupation: 'dev'
+    occupation: 'dev'
 }
 
 // Objects used as function parameters are passed by reference
-function update(person){
+function UpdateAge(person){
     // Increment a person's age by one
-    person.age+=1;
+    person.age++;
 }
 
-update(man);
-console.log(man); // Expected output: { name: 'Jing', age: 19, oocupation: 'dev' }
+UpdateAge(man);
+console.log(man); // Expected output: { name: 'Jing', age: 19, occupation: 'dev' }
 
 function increaseAgeByOne(person){ // Does not change the items of "person".
 
@@ -342,7 +359,7 @@ function increaseAgeByOne(person){ // Does not change the items of "person".
 }
 
 console.log(increaseAgeByOne(man)); // Expected output: { name: 'Jing', age: 20 }
-console.log(man); // Expected output: { name: 'Jing', age: 19, oocupation: 'dev' }
+console.log(man); // Expected output: { name: 'Jing', age: 19, occupation: 'dev' }
 
 // Primitive values used as function parameters are passed by reference
 function plus1(i) {
@@ -362,4 +379,4 @@ for (var key in man){
 // Output: 
 // name Jing
 // age 19
-// oocupation dev
+// occupation dev
