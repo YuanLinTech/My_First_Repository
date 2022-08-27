@@ -250,7 +250,7 @@ for (let i = 0; i <= 100; i++)
         res.push(i);
     }
 }
-console.log(res);
+console.log(res); // [4, 8, 12, 16, 24, 28, 32, 36, 44, 48]
 
 /* A function that finds the first ten numbers between 0 and param3 that are multiples of param1 but not multiples of param2, 
 and prints out the numbers in an array. */
@@ -272,7 +272,7 @@ function firstTen(param1, param2, param3)
     }
 }
 
-console.log(firstTen(4,5,100));
+console.log(firstTen(4, 5, 100)); // [4, 8, 12, 16, 24, 28, 32, 36, 44, 48]
 console.log(typeof(firstTen(4, 5, 100))); // Expected output: object
 
 // Function expression
@@ -300,6 +300,7 @@ console.log(sum(1,2)); // Expected output: 3
 
 // Anonymous function expression
 const x = function(a, b) {return a * b;}
+console.log(typeof x);
 // Use the variable z as a function
 let z = x(4, 3);
 console.log(z); // Expected output: 12
@@ -308,7 +309,7 @@ console.log(z); // Expected output: 12
 const myFunc = function square(num){
     return num*num;
 }
-
+console.log(typeof myFunc);
 // Functions can be used as variables.
 // Add the values of num1 and num2, multiply the sum by 2, and return the result.
 function firstSumthenDouble(sumFunc, num1, num2){
