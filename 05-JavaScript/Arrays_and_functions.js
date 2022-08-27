@@ -388,8 +388,8 @@ var t = 1;
 plus1(t);
 console.log(t); // Expected output: 1
 
-for (var key in man){
-    console.log(key+' '+man[key]);
+for (var p in man){
+    console.log(p+' '+man[p]);
 }
 
 // Output: 
