@@ -66,11 +66,13 @@ console.log(newPerson); // Output: { name: 'Maya', age: 29 }
 person.name = 'Joe';
 console.log(newPerson); // Output: { name: 'Joe', age: 29 }
 
+// A function that prints out the indices of the pair(s) of elements in an integer array whose sum equal the target value.
+// The function prints out an empty array if there are no pairs of elements whose sum equal the target value.
 function getSumIndices(array, target)
 {
     if (!array || array.length < 2)
     {
-        console.log([]);
+        console.log([]); // Print out an empty array if there are no pairs of elements whose sum equal the target value.
     }
     for (var i = 0; i < array.length; i++)
     {
