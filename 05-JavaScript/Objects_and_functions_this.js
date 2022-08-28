@@ -14,7 +14,7 @@ function Car(make, model, year) {
     this.year = year;
 }
 const myCar = new Car('Eagle', 'Talon TSi', 1993);
-const kensCar = new Car('Nissan', '300ZX', 1992);
+const KensCar = new Car('Nissan', '300ZX', 1992);
 
 console.log(myCar.color);    // undefined
 
@@ -39,7 +39,7 @@ function Person(name, age, sex) {
 const Rand = new Person('Rand McNally', 33, 'M');
 const Ken = new Person('Ken Jones', 39, 'M');
 
-function Car(make, model, year, owner) {
+function Car(make, model, year, color, owner) {
     this.make = make;
     this.model = model;
     this.year = year;
@@ -52,3 +52,16 @@ const car2 = new Car('Nissan', '300ZX', 'grey', 1992, Ken);
 // Print out the name of car2's owner
 console.log(car2.owner.name); // Expected output: Ken
 
+var Name = 'Maya';
+console.log(Name); // Output: Maya
+var newName = Name;
+console.log(newName); // Output: Maya
+Name = 'Joe';
+console.log(newName); // Output: Maya
+
+var person = { name: 'Maya', age: 29 };
+console.log(person); // Output: { name: 'Maya', age: 29 }
+var newPerson = person;
+console.log(newPerson); // Output: { name: 'Maya', age: 29 }
+person.name = 'Joe';
+console.log(newPerson); // Output: { name: 'Joe', age: 29 }
