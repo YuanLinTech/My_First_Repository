@@ -66,14 +66,23 @@ console.log(newPerson); // Output: { name: 'Maya', age: 29 }
 person.name = 'Joe';
 console.log(newPerson); // Output: { name: 'Joe', age: 29 }
 
-// function getSumIndices(array, target)
-// {
-//     if (!array || array.length < 2){
-//         console.log([]);
-//     }
-//     for (var i = 0; i < array.length; i++){
-//         var index1 = 1;
-//         var index2 = ;
-//     }
+function getSumIndices(array, target)
+{
+    if (!array || array.length < 2)
+    {
+        console.log([]);
+    }
+    for (var i = 0; i < array.length; i++)
+    {
+        var index1 = i;
+        var index2 = array.index0f(target-array[i]);
 
-// }
+        // If there is another element in the array whose sum with the current element array[i] equals the target value
+        if (index2 != -1)
+        {
+            console.log([index1, index2]);
+        }
+    }
+}
+
+getSumIndices([1, 3, 4, 6, 7, 8, 10, 14, 15], 14);
