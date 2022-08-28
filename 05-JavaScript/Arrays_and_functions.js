@@ -392,6 +392,22 @@ for (var p in man){
     console.log(p+' '+man[p]);
 }
 
+const ages = [3, 10, 18, 20];
+function checkAge(age) {
+    return age > 18;
+}
+console.log(ages.findIndex(checkAge)); // Expected output: 3
+
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Apple", "Lemon", "Apple"];
+let index = fruits.indexOf("Apple");
+console.log(index); // Expected output: 2
+
+index = fruits.indexOf("Apple", 3); // Start the search from index 3
+console.log(index); // Expected output: 4
+
+index = fruits.indexOf("Apple", -1); // Start the search from the end of the array
+console.log(index); // Expected output: 6
+
 // Output: 
 // name Jing
 // age 19

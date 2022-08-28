@@ -65,3 +65,15 @@ var newPerson = person;
 console.log(newPerson); // Output: { name: 'Maya', age: 29 }
 person.name = 'Joe';
 console.log(newPerson); // Output: { name: 'Joe', age: 29 }
+
+// function getSumIndices(array, target)
+// {
+//     if (!array || array.length < 2){
+//         console.log([]);
+//     }
+//     for (var i = 0; i < array.length; i++){
+//         var index1 = 1;
+//         var index2 = ;
+//     }
+
+// }
