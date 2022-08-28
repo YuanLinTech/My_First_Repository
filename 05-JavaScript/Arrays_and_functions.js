@@ -392,6 +392,11 @@ for (var p in man){
     console.log(p+' '+man[p]);
 }
 
+// Output:
+// name Jing
+// age 19
+// occupation dev
+
 const ages = [3, 10, 18, 20];
 function checkAge(age) {
     return age > 18;
@@ -399,16 +404,33 @@ function checkAge(age) {
 console.log(ages.findIndex(checkAge)); // Expected output: 3
 
 const fruits = ["Banana", "Orange", "Apple", "Mango", "Apple", "Lemon", "Apple"];
-let index = fruits.indexOf("Apple");
+var index = fruits.indexOf("Apple");
 console.log(index); // Expected output: 2
 
-index = fruits.indexOf("Apple", 3); // Start the search from index 3
+// Start the search from index 3
+index = fruits.indexOf("Apple", 3); 
 console.log(index); // Expected output: 4
 
-index = fruits.indexOf("Apple", -1); // Start the search from the end of the array
+// Start the search from the end of the array
+index = fruits.indexOf("Apple", -1); 
 console.log(index); // Expected output: 6
 
-// Output: 
-// name Jing
-// age 19
-// occupation dev
+// Start the search at the third last position
+index = fruits.indexOf("Apple", -3);
+console.log(index); // Expected output: 4
+
+const MoreFruits = ["Banana", "Orange", "Apple", "Mango", "Apple", "Lemon", "Apple"];
+var index = MoreFruits.lastIndexOf("Apple");
+console.log(index); // Expected output: 6
+
+// Start the search from index 3
+index = MoreFruits.lastIndexOf("Apple", 3);
+console.log(index); // Expected output: 2
+
+// Start the search from the end of the array
+index = MoreFruits.lastIndexOf("Apple", -1); 
+console.log(index); // Expected output: 6
+
+// Start the search at the second last position
+index = MoreFruits.lastIndexOf("Apple", -2); // Start the search from the end of the array
+console.log(index); // Expected output: 4

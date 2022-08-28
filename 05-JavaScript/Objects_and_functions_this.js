@@ -70,14 +70,14 @@ console.log(newPerson); // Output: { name: 'Joe', age: 29 }
 // The function prints out an empty array if there are no pairs of elements whose sum equals the target value.
 function getSumIndices(array, target)
 {
-    if (!array || array.length < 2)
+    if (!Array.isArray(array) || array.length < 2)
     {
         console.log([]); // Print out an empty array if there are no pairs of elements whose sum equals the target value.
     }
-    for (var i = 0; i < array.length; i++)
+    for (var i = 0; i < array.length-1; i++)
     {
         var index1 = i;
-        var index2 = array.indexOf(target-array[i], index1); // Start searching from index 1 to avoid printing out the indices of the same pairs of numbers in different order
+        var index2 = array.indexOf(target-array[i], index1+1); // Start searching from the position specified by index1+1 to avoid printing out the indices of the same pairs of numbers in different order or [4,4]
 
         // If there is another element in the array whose sum with the current element array[i] equals the target value
         if (index2 != -1)
