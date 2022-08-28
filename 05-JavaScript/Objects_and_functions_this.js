@@ -77,7 +77,7 @@ function getSumIndices(array, target)
     for (var i = 0; i < array.length; i++)
     {
         var index1 = i;
-        var index2 = array.index0f(target-array[i]);
+        var index2 = array.indexOf(target-array[i]);
 
         // If there is another element in the array whose sum with the current element array[i] equals the target value
         if (index2 != -1)
