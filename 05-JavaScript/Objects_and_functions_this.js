@@ -88,3 +88,14 @@ function getSumIndices(array, target)
 }
 
 getSumIndices([1, 3, 4, 6, 7, 8, 10, 14, 15], 14);
+
+const member = {
+    firstName: "John",
+    lastName: "Doe",
+    id: 5566,
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+console.log(member.fullName()); // Expected output: John Doe
