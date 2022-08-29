@@ -1,2 +1,2 @@
 # My_First_Repository
-## First commit test
+### A showcase of my skills in HTML, CSS and JavaScript.
