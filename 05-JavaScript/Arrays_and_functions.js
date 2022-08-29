@@ -246,7 +246,7 @@ for (let i = 0; i <= 100; i++)
         break;
     }
 
-    if ((i % 4 === 0) && (i % 5 != 0)) {
+    if ((i % 4 === 0) && (i % 5 !== 0)) {
         res.push(i);
     }
 }
@@ -266,7 +266,7 @@ function firstTen(param1, param2, param3)
             return res;
         }
 
-        if ((i % param1 === 0) && (i % param2 != 0)){
+        if ((i % param1 === 0) && (i % param2 !== 0)){
             res.push(i);
         }
     }
@@ -284,7 +284,7 @@ console.log(typeof(firstTen(4, 5, 100))); // Expected output: object
 //             return res;
 //         }
 
-//         if ((i % param1 === 0) && (i % param2 != 0)) {
+//         if ((i % param1 === 0) && (i % param2 !== 0)) {
 //             res.push(i);
 //         }
 //     }

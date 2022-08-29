@@ -80,14 +80,14 @@ function getSumIndices(array, target)
         var index2 = array.indexOf(target-array[i], index1+1); // Start searching from the position specified by index1+1 to avoid printing out the indices of the same pairs of numbers in different order or [4,4]
 
         // If there is another element in the array whose sum with the current element array[i] equals the target value
-        if (index2 != -1)
+        if (index2 !== -1)
         {
             console.log([index1, index2]);
         }
     }
 }
 
-getSumIndices([1, 3, 4, 6, 7, 8, 10, 14, 15], 14);
+getSumIndices([1, 3, 4, 6, 7, 8, 10, 14, 15], 14); // [ 2, 6 ] [3, 5]
 
 const member = {
     firstName: "John",
