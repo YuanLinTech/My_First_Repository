@@ -1,3 +1,4 @@
+// package com.jiangren.bootcamp.java
 import java.util.Scanner; // Scanner is in the java.util package
 
 public class ComputeAreaWithConstant 
