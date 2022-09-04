@@ -144,12 +144,17 @@ console.log(twoDArray instanceof Array); // true
 
 const newCar = myCar.slice(0, 3);
 console.log(newCar);
-// Expected output: 
+// Expected output:
 //[
 //{ color: 'red', wheels: 4, engine: { cylinders: 4, size: 2.2 } },
 //2,
 //    'cherry condition'
 //]
+
+// IIFE (Immediately Invoked Function Expression)
+(function(){
+    console.log("Hello world!");
+})()
 
 const parts = ['shoulders', 'knees'];
 const lyrics = ['head', ...parts, 'and', 'toes'];
