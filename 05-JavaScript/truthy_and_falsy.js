@@ -49,4 +49,9 @@ console.log(b7); // Output: false
 
 /* var c = a && b
 If a is truthy, then c === b.
-If a is falsy, them c === false. */
+If a is falsy, them c === a. 
+
+var c = a || b
+If a is truthy, then c === a.
+If a is falsy, them c === b. 
+*/
