@@ -59,6 +59,9 @@ console.log(newName); // Output: Maya
 Name = 'Joe';
 console.log(newName); // Output: Maya
 
+console.log({} == {}) // Output: false (Two objects are only equal, both strictly and non-strictly, if theyy reference the same object.)
+console.log({} === {}) // Output: false
+
 var person = { name: 'Maya', age: 29 };
 console.log(person); // Output: { name: 'Maya', age: 29 }
 var newPerson = person;

@@ -104,6 +104,10 @@ const Fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = Fruits[-1];
 console.log(fruit); // undefined
 
+// if (2 = x){ // Error: because 2 is not a legal variable name
+
+// }
+
 function func1(a, b, c) {
     console.log(arguments[0]);
     // expected output: 1
@@ -175,10 +179,12 @@ console.log(beverage); // Expected output: "Beer"
 
 var age = 18;
 
-if (age < 18) {
+if (age < 18) 
+{
     console.log('You are under 18.');
 }
-else {
+else 
+{ // else always matches its nearest if
     console.log('You are over 18.');
 }
 
