@@ -14,3 +14,8 @@ function getStops(flights)
         return stop + ' stops';
     }
 }
+
+/*
+Readable
+Maintainable
+Reusable */

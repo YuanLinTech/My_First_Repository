@@ -305,7 +305,8 @@ console.log(sum(1,2)); // Expected output: 3
 
 // Anonymous function expression
 const x = function(a, b) {return a * b;}
-console.log(typeof x); // Expected output: function
+console.log(typeof x); /* Output: function
+Although functions are in fact objects, typeof() will return function for the type of a function. */
 // Use the variable z as a function
 let z = x(4, 3);
 console.log(z); // Expected output: 12

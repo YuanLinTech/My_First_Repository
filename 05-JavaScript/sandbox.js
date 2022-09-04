@@ -1,3 +1,5 @@
+// Semicolon only required in JavaScript when you need to write multiple statements on the same line.
+// Semicolons only exist to separate multiple statements on the same line.
 // Declaration 声明
 var student;
 // Assignment 赋值
