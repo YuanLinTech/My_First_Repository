@@ -12,31 +12,31 @@ body {
     align-content: stretch;
 }
 
-.container div {
+.container > div {
     width: 100%;
     height: 40px;
 }
 
 .blue{
-
+    background-color: blue;
 }
 
 .orange{
-
+    background-color: orange;
 }
 
 .green{
-
+    background-color: green;
 }
 
 .goldenrod{
-
+    background-color: goldenrod;
 }
 
 .violet{
-
+    background-color: violet;
 }
 
 .red{
-    
+    background-color: red;
 }
