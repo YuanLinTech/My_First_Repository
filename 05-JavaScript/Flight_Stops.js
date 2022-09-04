@@ -15,10 +15,5 @@ function getStops(flights)
     }
 }
 
-const flights = [{ 'origin': 'MEL', 'destination': 'CAN' }, { 'origin': 'CAN', 'destination': 'PVG' }];
-console.log(getStops(flights));
-
-/*
-Readable
-Maintainable
-Reusable */
+const flights = [{ 'origin': 'MEL', 'destination': 'HKG' }, { 'origin': 'HKG', 'destination': 'CAN' }, { 'origin': 'CAN', 'destination': 'PVG' }];
+console.log(getStops(flights)); // Output: 2 stops
