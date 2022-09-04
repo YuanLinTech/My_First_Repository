@@ -1,11 +1,11 @@
 function getStops(flights)
 {
     let stop = flights.length - 1;
-    if (stop == 0)
+    if (stop === 0)
     {
         return 'Direct';
     }
-    else if (stop == 1)
+    else if (stop === 1)
     {
         return '1 stop';
     }
@@ -14,6 +14,9 @@ function getStops(flights)
         return stop + ' stops';
     }
 }
+
+const flights = [{ 'origin': 'MEL', 'destination': 'CAN' }, { 'origin': 'CAN', 'destination': 'PVG' }];
+console.log(getStops(flights));
 
 /*
 Readable
