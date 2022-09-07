@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html,
@@ -11,30 +10,42 @@ body{
 
 }
 
-#block{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* align-content: center; */
-    align-items: center;
-}
-
-.A,
-.B,
-.C{
+.container {
+    background-color: #ddd;
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 90%;
     height: 50px;
-    border: 2px solid black;
-    margin: 1px;
-    text-align: center;
+    margin: 30px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
 }
 
-.B{
-    width: 200px;
-    align-self: end;
+div.container>div {
+    height: 50px;
 }
 
-/* .C{
-    flex-shrink: 4;
-} */
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.goldenrod {
+    background-color: goldenrod;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.red {
+    background-color: red;
+}

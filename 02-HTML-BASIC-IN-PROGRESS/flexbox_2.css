@@ -3,12 +3,11 @@
     font-family: sans-serif;
     font-size: 20px;
     width: 90%;
-    height: 300px;
+    height: 400px;
     margin: 30px;
-    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
-    align-content: stretch;
+    align-content: flex-start;
 }
 
 div.container > div {
