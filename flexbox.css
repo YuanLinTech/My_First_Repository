@@ -1,25 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html,
-body{
-    width:100vw;
-    height:100vh;
-
-}
-
 .container {
     background-color: #ddd;
     font-family: sans-serif;
     font-size: 20px;
-    width: 90%;
+    width: 95%;
     height: 50px;
-    margin: 30px;
+    margin: 20px;
     display: flex;
     /* flex-wrap: wrap; */
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
 
 div.container>div {
