@@ -20,13 +20,13 @@ function Toy(name, price)
 const cheese = new Food('feta', 5);
 const fun = new Toy('robot', 40);
 
-console.log(cheese.name);
-console.log(cheese.price);
-console.log(cheese.category);
+console.log(cheese.name); // Output: feta
+console.log(cheese.price); // Output: 5
+console.log(cheese.category); // Output: food
 
-console.log(fun.name);
-console.log(fun.price);
-console.log(fun.category);
+console.log(fun.name); // Output: robot
+console.log(fun.price); // Output: 40
+console.log(fun.category); // Output: toy
 
 // Using call() to invoke an anonymous function
 const animals = 
@@ -44,6 +44,9 @@ function assignPrintMethod(i)
     this.print();
 }
 
+/* Output:
+0 Lion: King
+1 Whale: Fail */
 for (let i = 0; i < animals.length; i++) 
 {
     assignPrintMethod.call(animals[i], i);
@@ -57,11 +60,11 @@ function greet()
 
 const obj = 
 {
-    animal: 'cats',
+    animal: 'Cats',
     sleepDuration: '12 and 16 hours',
 };
 
-greet.call(obj);  // cats typically sleep between 12 and 16 hours
+greet.call(obj);  // Output: Cats typically sleep between 12 and 16 hours
 
 // Using call() to invoke a function and without specifying the first argument
 
