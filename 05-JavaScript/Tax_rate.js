@@ -36,13 +36,15 @@ function calculateTax(income, taxTable)
     }
 }
 
-// SOLID: The First 5 Principles of Object Oriented Design
-// SOLID stands for:
+/*
+SOLID: The First 5 Principles of Object Oriented Design
+SOLID stands for:
 
-// S - Single - responsiblity Principle
-// O - Open - closed Principle
-// L - Liskov Substitution Principle
-// I - Interface Segregation Principle
-// D - Dependency Inversion Principle
+S - Single - responsiblity Principle
+O - Open - closed Principle
+L - Liskov Substitution Principle
+I - Interface Segregation Principle
+D - Dependency Inversion Principle
+*/
 
 
