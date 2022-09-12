@@ -1,19 +1,51 @@
+/*
+
+Resident tax rates 2022–23
+Taxable income
+
+Tax on this income
+
+0 – $18,200
+
+Nil
+
+$18,201 – $45,000
+
+19 cents for each $1 over $18,200
+
+$45,001 – $120,000
+
+$5,092 plus 32.5 cents for each $1 over $45,000
+
+$120,001 – $180,000
+
+$29,467 plus 37 cents for each $1 over $120,000
+
+$180,001 and over
+
+$51,667 plus 45 cents for each $1 over $180,000
+
+*/
+
+
 // Readale, maintainable and reusable
 let salaryRange = [0, 18200, 45000, 120000, 180000];
 let taxRate = [0, 0.19, 0.325, 0.37, 0.45];
 let startNum = [0, 0, 5092, 29467, 51667];
 
-function findRange(salary)
+function findTax(salary)
 {
     for (let i = salaryRange.length; i >= 0; i--)
     {
         if (salary > salaryRange[i])
         {
-            const tax = ((salary - salaryRange[i]) * taxRate[i] + starNum[i]).toFixed(2);
+            const tax = (salary - salaryRange[i]) * taxRate[i] + starNum[i];
             return tax;
         }
     }
 }
+
+console.log(findTax(180000));
 
 var TAX_TABLE_2022 = 
 [
