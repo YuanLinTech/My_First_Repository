@@ -62,13 +62,13 @@ function calculateTax(income, taxTable)
     {
         if (income > taxTable[i].min && income <= taxTable[i].max)
         {
-            var tax = taxTable[i].tax + (income - taxTable[i].min) * rate;
+            var tax = taxTable[i].tax + (income - taxTable[i].min) * taxTable[i].rate;
             return tax;
         }
     }
 }
 
-console.log(160000, TAX_TABLE_2022);
+console.log(calculateTax(160000, TAX_TABLE_2022));
 
 /*
 SOLID: The First 5 Principles of Object Oriented Design
