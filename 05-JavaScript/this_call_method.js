@@ -44,13 +44,14 @@ function assignPrintMethod(i)
     this.print();
 }
 
-/* Output:
-0 Lion: King
-1 Whale: Fail */
 for (let i = 0; i < animals.length; i++) 
 {
     assignPrintMethod.call(animals[i], i);
 }
+
+/* Output:
+0 Lion: King
+1 Whale: Fail */
 
 function greet() 
 {
