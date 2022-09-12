@@ -58,11 +58,11 @@ var TAX_TABLE_2022 =
 
 function calculateTax(income, taxTable)
 {
-    for (var i = 0; i< taxTable.length; i++)
+    for (let i = 0; i< taxTable.length; i++)
     {
         if (income > taxTable[i].min && income <= taxTable[i].max)
         {
-            var tax = taxTable[i].tax + (income - taxTable[i].min) * taxTable[i].rate;
+            const tax = taxTable[i].tax + (income - taxTable[i].min) * taxTable[i].rate;
             return tax;
         }
     }
