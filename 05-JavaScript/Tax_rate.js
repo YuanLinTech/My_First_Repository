@@ -65,6 +65,13 @@ function calculateTax(income, taxTable)
             const tax = taxTable[i].tax + (income - taxTable[i].min) * taxTable[i].rate;
             return tax;
         }
+        /* Write the function body using arrow functions
+        
+        var taxRow = taxTable.find((row)=>income > row.min && income <= row.max);
+        var tax = taxRow.tax + (income - taxRow.min) * taxRow.rate;
+        return tax;
+
+        */
     }
 }
 
