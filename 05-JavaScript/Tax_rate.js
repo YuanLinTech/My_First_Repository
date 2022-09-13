@@ -77,6 +77,12 @@ function calculateTax(income, taxTable)
 
 console.log(calculateTax(160000, TAX_TABLE_2022));
 
+function taxCalculator(income,taxTable){
+    var taxRow = taxTable.find((row) => income > row.min && income <= row.max); // Find the row that satisfies the criteria income > row.min && income <= row.max
+    var tax = taxRow.tax + (income - taxRow.min) * rate;
+    return tax;
+}
+
 /*
 SOLID: The First 5 Principles of Object Oriented Design
 SOLID stands for:
