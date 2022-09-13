@@ -12,6 +12,13 @@ var sum = (num1, num2) =>
 // Omit the return statement
 var sum = (num1, num2) => num1 + num2; // Return can be omitted only if the function body consists of only one line
 
+// If the function body consists of more than one line, then the return statement cannot be omitted.
+var sum = (num1, num2) =>
+{
+    console.log('Sum is ${num1 + num2}');
+    return num1 + num2;
+}
+
 const fruitInventory = [
     { name: 'apples', quantity: 2 },
     { name: 'bananas', quantity: 0 },
