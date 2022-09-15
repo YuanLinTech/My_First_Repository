@@ -81,7 +81,7 @@ console.log(x()); // Output: 30
 const y = ({ a, b } = { a: 10, b: 20 }) => a + b; /* Used destructuring assignment to assign a the default value of 10 and b the default value of 20. */
 console.log(y()); // Output: 30
 
-const arguments = [1, 2, 3];
+const nums = [1, 2, 3];
 const arr = () => arguments[0];
 
 arr(); // 1
