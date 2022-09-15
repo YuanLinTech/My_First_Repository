@@ -1,25 +1,72 @@
+// Traditional Anonymous Function
+var myFunc = function (a) {
+    return a + 100;
+};
+
+// Arrow Function Break Down
+
+// 1. Remove the word "function" and place arrow between the argument and opening body bracket
+var myFunc = (a) => {
+    return a + 100;
+};
+
+// 2. Remove the body braces and word "return" — the return is implied.
+var myFunc = (a) => a + 100;
+
+// 3. Remove the argument parentheses
+var myFunc = a => a + 100;
+
+// Traditional Anonymous Function
 var sum = function(num1,num2)
 {
     return num1 + num2;
 }
 
-// Equivalent to
+// 1. Remove the word "function" and place arrow between the argument and opening body bracket
 var sum = (num1, num2) => 
 {
     return num1 + num2;
 }
 
-// Omit the return statement
-var sum = (num1, num2) => num1 + num2; // Return can be omitted only if the function body consists of only one line
+// 2. Remove the body braces and word "return" — the return is implied
+var sum = (num1, num2) => num1 + num2; // Argument parentheses can only be omitted if there is only one argument
 
-// If the function body consists of more than one line, then the return statement cannot be omitted.
-var sum = (num1, num2) =>
+const a = 4;
+const b = 2;
+
+// Traditional Anonymous Function (no arguments)
+var myFunc = function () {
+    return a + b + 100;
+};
+
+// Arrow Function (no arguments)
+var myFunc = () => a + b + 100;
+
+// Traditional Anonymous Function
+var sum = function(num1, num2)
 {
     console.log('Sum is ${num1 + num2}');
     return num1 + num2;
 }
 
-const fruitInventory = [
+// Arrow Function (function body consists of multiple lines)
+// Body braces and return can only be omitted if the function body consists of only one line
+var sum = (num1, num2) => 
+{
+    console.log('Sum is ${num1 + num2}');
+    return num1 + num2;
+}
+
+// Traditional Function
+function bob(a) {
+    return a + 100;
+}
+
+// Arrow Function
+const bob2 = (a) => a + 100;
+
+const fruitInventory = 
+[
     { name: 'apples', quantity: 2 },
     { name: 'bananas', quantity: 0 },
     { name: 'cherries', quantity: 5 },
@@ -27,9 +74,9 @@ const fruitInventory = [
 ];
 
 const result = fruitInventory.find(({name}) => name === 'cherries'); // Find the first occurrence of the fruit item with the name 'cherries'. Note the {} around "name".
-// const result = fruitInventory.find((name) => name === 'cherries');
-// console.log(result) // undefined
-const emptyStock = fruitInventory.find((fruit)=> fruit.quantity === 0); // Find the fruit occurrence of the fruit item with no stock. Note that there are no {} around "fruit".
+// If you type const result = fruitInventory.find((name) => name === 'cherries'); then the result of console.log(result) would be undefined
+// Equivalent to const result = fruitInventory.find((fruit) => fruit.name === 'cherries');
+const emptyStock = fruitInventory.find((fruit) => fruit.quantity === 0); // Find the fruit occurrence of the fruit item with no stock. Note that there are no {} around "fruit".
 console.log(result) // { name: 'cherries', quantity: 5 }
 console.log(emptyStock); // { name: 'bananas', quantity: 0 }
 
@@ -90,7 +137,7 @@ console.log(emptyStock); // { name: 'bananas', quantity: 0 }
 
 // // Parentheses are not required around an initialisation
 // let { Name, Age, Courses} = student;
-// let { Introduction, GiveUp } = Courses;
+// let [ Introduction, GiveUp ] = Courses;
 
 // /* The above two declarations are equivalent to
 // let Name = student.Name;
