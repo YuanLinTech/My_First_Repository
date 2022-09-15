@@ -31,6 +31,8 @@ var sum = (num1, num2) =>
 // 2. Remove the body braces and word "return" — the return is implied
 var sum = (num1, num2) => num1 + num2; // Argument parentheses can only be omitted if there is only one argument
 
+console.log(sum(1,2))
+
 const a = 4;
 const b = 2;
 
@@ -42,8 +44,10 @@ var myFunc = function () {
 // Arrow Function (no arguments)
 var myFunc = () => a + b + 100;
 
+console.log(myFunc()); // Output: 106
+
 // Traditional Anonymous Function
-var sum = function(num1, num2)
+var printSum = function(num1, num2)
 {
     console.log('Sum is ${num1 + num2}');
     return num1 + num2;
@@ -51,11 +55,16 @@ var sum = function(num1, num2)
 
 // Arrow Function (function body consists of multiple lines)
 // Body braces and return can only be omitted if the function body consists of only one line
-var sum = (num1, num2) => 
+var printSum = (num1, num2) => 
 {
     console.log('Sum is ${num1 + num2}');
     return num1 + num2;
 }
+
+console.log(printSum(1,2)); /* Output: 
+Sum is 3
+3
+*/
 
 // Traditional Function
 function bob(a) {
@@ -64,6 +73,29 @@ function bob(a) {
 
 // Arrow Function
 const bob2 = (a) => a + 100;
+console.log(bob2(1)); // Output: 101
+
+const x = ([a, b] = [10, 20]) => a + b; /* Used destructuring assignment to assign a the default value of 10 and b the default value of 20. */
+console.log(x()); // Output: 30
+
+const y = ({ a, b } = { a: 10, b: 20 }) => a + b; /* Used destructuring assignment to assign a the default value of 10 and b the default value of 20. */
+console.log(y()); // Output: 30
+
+const arguments = [1, 2, 3];
+const arr = () => arguments[0];
+
+arr(); // 1
+
+function foo(n) {
+    const f = () => arguments[0] + n; // foo's implicit arguments binding. arguments[0] is n
+    return f();
+}
+
+foo(3); // 3 + 3 = 6
+
+const Foo = () => { };
+console.log(Foo.prototype); // undefined
+// const foo = new Foo(); // TypeError: Foo is not a constructor
 
 const fruitInventory = 
 [
