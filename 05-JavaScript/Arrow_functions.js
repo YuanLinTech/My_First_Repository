@@ -31,7 +31,7 @@ var sum = (num1, num2) =>
 // 2. Remove the body braces and word "return" — the return is implied
 var sum = (num1, num2) => num1 + num2; // Argument parentheses can only be omitted if there is only one argument
 
-console.log(sum(1,2))
+console.log(sum(1, 2)) // Output: 3
 
 const a = 4;
 const b = 2;
@@ -49,7 +49,7 @@ console.log(myFunc()); // Output: 106
 // Traditional Anonymous Function
 var printSum = function(num1, num2)
 {
-    console.log('Sum is ${num1 + num2}');
+    console.log(`Sum is ${num1 + num2}`);
     return num1 + num2;
 }
 
@@ -57,7 +57,7 @@ var printSum = function(num1, num2)
 // Body braces and return can only be omitted if the function body consists of only one line
 var printSum = (num1, num2) => 
 {
-    console.log('Sum is ${num1 + num2}');
+    console.log(`Sum is ${num1 + num2}`);
     return num1 + num2;
 }
 
@@ -81,17 +81,21 @@ console.log(x()); // Output: 30
 const y = ({ a, b } = { a: 10, b: 20 }) => a + b; /* Used destructuring assignment to assign a the default value of 10 and b the default value of 20. */
 console.log(y()); // Output: 30
 
+// Arrow functions do not have their own arguments object
 const nums = [1, 2, 3];
 const arr = () => arguments[0];
+console.log(arr()); // Output: {}
 
-arr(); // 1
+var arguments = [1, 2, 3];
+const arr1 = () => arguments[0];
+console.log(arr1()); // 1
 
 function foo(n) {
     const f = () => arguments[0] + n; // foo's implicit arguments binding. arguments[0] is n
     return f();
 }
 
-foo(3); // 3 + 3 = 6
+console.log(foo(3)); // 3 + 3 = 6
 
 const Foo = () => { };
 console.log(Foo.prototype); // undefined
