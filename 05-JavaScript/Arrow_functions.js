@@ -81,21 +81,33 @@ console.log(x()); // Output: 30
 const y = ({ a, b } = { a: 10, b: 20 }) => a + b; /* Used destructuring assignment to assign a the default value of 10 and b the default value of 20. */
 console.log(y()); // Output: 30
 
+console.log(arguments);
+console.log(arguments[0]); // arguments[0] in the global scope equals to {}
+
 // Arrow functions do not have their own arguments object
-const nums = [1, 2, 3];
-const arr = () => arguments[0];
-console.log(arr()); // Output: {}
+const arr = (a) => 
+{
+    console.log(arguments[0]); // arguments[0] in the global scope equals to {}
+    return arguments[0] + a;
+}
 
-var arguments = [1, 2, 3];
-const arr1 = () => arguments[0];
-console.log(arr1()); // 1
+console.log(arr(1)); /* Output: 
+{}
+[object Object]1
+*/
 
-function foo(n) {
+function foo(n) 
+{
     const f = () => arguments[0] + n; // foo's implicit arguments binding. arguments[0] is n
     return f();
 }
 
-console.log(foo(3)); // 3 + 3 = 6
+console.log(foo(3)); // Output: 6 (3 + 3 = 6)
+console.log(arguments[0]); // arguments[0] in the global scope still equals to {}
+
+var arguments = [1, 2, 3];
+const arr1 = () => arguments[0];
+console.log(arr1()); // 1
 
 const Foo = () => { };
 console.log(Foo.prototype); // undefined

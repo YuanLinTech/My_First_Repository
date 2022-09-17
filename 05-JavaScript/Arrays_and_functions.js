@@ -214,6 +214,21 @@ console.log(longestString("integrity", "decency", "authenticity")) // expected o
 console.log(typeof arguments); // expected output: object
 console.log(typeof arguments[0]); // expected output: object
 
+// The longestString function is equivalent to
+
+function longestString1(...StringArgs) 
+{
+    let longest = '';
+    for (let i = 0; i < StringArgs.length; i++) {
+        if (StringArgs[i].length > longest.length) {
+            longest = StringArgs[i];
+        }
+    }
+    return longest;
+}
+
+console.log(longestString1("integrity", "decency", "authenticity")) // expected output: authenticity
+
 for (let x = 0; x < 10; x++)
 {
     console.log(x*x);
