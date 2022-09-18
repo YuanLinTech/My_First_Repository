@@ -124,27 +124,58 @@ func1(1, 2, 3);
 // 2
 // 3
 
-function myFunction(x, y, z) { 
+function myFunction(x, y, z) 
+{ 
     return x+y+z;
 }
-const args = [1, 2, 3];
-console.log(myFunction(...args)); // expected output: 6
+const args1 = [1, 2, 3];
+console.log(myFunction(...args1)); // expected output: 6
+
+function sumFunc(v, w, x, y, z) 
+{
+    return v + w + x + y + z;
+}
+
+const args2 = [0, 1];
+const args3 = [2, 3];
+console.log(sumFunc(-1, ...args2, ...args3)); // expected output: 5
 
 const myHonda = { color: 'red', wheels: 4, engine: { cylinders: 4, size: 2.2 } };
-// const myCar = [...myHonda, 2, 'cherry condition', 'purchased 1997']; TypeError: myHonda is not iterable
+// const myCar = [...myHonda, 2, 'cherry condition', 'purchased 1997']; // TypeError: myHonda is not iterable
 const myCar = [myHonda, 2, 'cherry condition', 'purchased 1997'];
 console.log(myCar); 
-// Expected output: 
-// [
-//   { color: 'red', wheels: 4, engine: { cylinders: 4, size: 2.2 } },
-//    2,
-//    'cherry condition',
-//    'purchased 1997'
-// ]
+/* Expected output: 
+   [
+     { color: 'red', wheels: 4, engine: { cylinders: 4, size: 2.2 } },
+      2,
+      'cherry condition',
+      'purchased 1997'
+   ] */
+
+const arr = [1, 2, 3];
+const obj = { ...arr }; 
+console.log(obj);// { 0: 1, 1: 2, 2: 3 }
+
+var array = ['a', 'b'];
+var elements = [0, 1, 2];
+array.push.apply(array, elements); // Equivalent to Array.prototype.push.apply(arr1, arr2);
+console.log(array); // [ 'a', 'b', 0, 1, 2 ]
+
+var array = ['a', 'b'];
+var elements = [0, 1, 2];
+array.push(...elements);
+console.log(array); // [ 'a', 'b', 0, 1, 2 ]
 
 console.log(Array.isArray(myHonda)); // false
 console.log(Array.isArray(myCar));  // true
 console.log(twoDArray instanceof Array); // true
+
+const arr1 = [0, 1, 2];
+const arr2 = [3, 4, 5];
+
+//  Prepend all items from arr2 onto arr1
+arr1.unshift.apply(arr1, arr2); // Equivalent to Array.prototype.unshift.apply(arr1, arr2);
+console.log(arr1); // arr1 is now [3, 4, 5, 0, 1, 2]
 
 const newCar = myCar.slice(0, 3);
 console.log(newCar);
