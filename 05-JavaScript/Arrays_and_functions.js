@@ -154,11 +154,11 @@ console.log(myCar);
 
 const arr = [1, 2, 3];
 const obj = { ...arr }; 
-console.log(obj);// { 0: 1, 1: 2, 2: 3 }
+console.log(obj);// { '0': 1, '1': 2, '2': 3 }
 
 var array = ['a', 'b'];
 var elements = [0, 1, 2];
-array.push.apply(array, elements); // Equivalent to Array.prototype.push.apply(arr1, arr2);
+array.push.apply(array, elements); // Equivalent to Array.prototype.push.apply(array, elements);
 console.log(array); // [ 'a', 'b', 0, 1, 2 ]
 
 var array = ['a', 'b'];

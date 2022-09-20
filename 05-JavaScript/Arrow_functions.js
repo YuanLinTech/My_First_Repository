@@ -128,6 +128,22 @@ const emptyStock = fruitInventory.find((fruit) => fruit.quantity === 0); // Find
 console.log(result) // { name: 'cherries', quantity: 5 }
 console.log(emptyStock); // { name: 'bananas', quantity: 0 }
 
+// An empty arrow function returns undefined
+const empty = () => { };
+console.log(empty()); // Output: undefined
+
+(() => 'foobar')();
+// Returns "foobar"
+// (this is an Immediately Invoked Function Expression)
+
+const simple = (a) => a > 15 ? 15 : a;
+console.log(simple(16)); // Output: 15
+console.log(simple(10)); // Output: 10
+
+const max = (a, b) => a > b ? a : b;
+console.log(max(1,2)); // Output: 2
+console.log(max(101,100)); // Output: 101
+console.log(max(5,5)); // Output: 5
 
 // function Person(name)
 // {

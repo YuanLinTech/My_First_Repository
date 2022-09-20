@@ -102,3 +102,12 @@ const member = {
 };
 
 console.log(member.fullName()); // Expected output: John Doe
+
+const obj1 = { foo: 'bar', x: 42 };
+const obj2 = { foo: 'baz', y: 13, z: 31};
+
+const clonedObj = { ...obj1 };
+console.log(clonedObj); // Output: { foo: 'bar', x: 42 }
+
+const mergedObj = { ...obj1, ...obj2 };
+console.log(mergedObj); // Output: { foo: 'baz', x: 42, y: 13, z: 31 }
