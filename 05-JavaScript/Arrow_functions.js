@@ -192,12 +192,23 @@ const numbers1 = [4, 2, 5, 1, 3];
 numbers1.sort((a, b) => a - b);
 console.log(numbers1); // [1, 2, 3, 4, 5]
 
-function sortRestArgs(...theArgs) {
+function sortRestArgs(...theArgs) 
+{
     const sortedArgs = theArgs.sort();
     return sortedArgs;
 }
 
-console.log(sortRestArgs(5, 3, 7, 1)); // 1, 3, 5, 7
+console.log(sortRestArgs(5, 3, 7, 1)); // [ 1, 3, 5, 7 ]
+
+// To use Array methods on the arguments object, it must be converted to a real array first.
+function sortArguments() 
+{
+    const args = Array.from(arguments); // Convert arguments to a real array
+    const sortedArgs = args.sort();
+    return sortedArgs;
+}
+console.log(sortArguments(5, 3, 7, 1)); // [ 1, 3, 5, 7 ]
+
 
 // index goes from 0, so the filterNumbers are 1,2,3 and undefined.
 // filteredNumbers is [1, 2, 3, undefined]
