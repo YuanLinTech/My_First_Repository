@@ -145,6 +145,58 @@ console.log(max(1,2)); // Output: 2
 console.log(max(101,100)); // Output: 101
 console.log(max(5,5)); // Output: 5
 
+const array1 = [1, 4, 9, 16];
+const map1 = array1.map(x => x * 2);
+console.log(map1); // expected output: [2, 8, 18, 32]
+console.log(array1) // array1 is still [1, 4, 9, 16]
+
+const numbers = [1, 4, 9];
+const roots = numbers.map((num) => Math.sqrt(num));
+console.log(roots); // roots is now [1, 2, 3]
+console.log(numbers); // numbers is still [1, 4, 9]
+
+const kvArray = 
+[
+    { key: 1, value: 10 },
+    { key: 2, value: 20 },
+    { key: 3, value: 30 },
+];
+
+const reformattedArray = kvArray.map(({ key, value }) => ({ [key]: value }));
+console.log(reformattedArray); // reformattedArray is now [ { '1': 10 }, { '2': 20 }, { '3': 30 } ]
+console.log(kvArray); // kvArray is still [ { key: 1, value: 10 }, { key: 2, value: 20 }, { key: 3, value: 30 } ]
+
+const Numbers = [1, 2, 3, 4];
+const filteredNumbers = Numbers.map((num, index) => 
+{
+    if (index < 3) {
+        return num;
+    }
+});
+console.log(filteredNumbers);// filteredNumbers is [1, 2, 3, undefined]
+console.log(Numbers); // Numbers is still [1, 2, 3, 4]
+
+function myFun(a, b, ...manyMoreArgs) {
+    console.log("a", a);
+    console.log("b", b);
+    console.log("manyMoreArgs", manyMoreArgs);
+}
+
+myFun("one", "two", "three", "four", "five", "six");
+
+// a, "one"
+// b, "two"
+// manyMoreArgs, ["three", "four", "five", "six"] <-- notice it's an array
+
+const numbers1 = [4, 2, 5, 1, 3];
+numbers1.sort((a, b) => a - b);
+console.log(numbers1); // [1, 2, 3, 4, 5]
+
+// index goes from 0, so the filterNumbers are 1,2,3 and undefined.
+// filteredNumbers is [1, 2, 3, undefined]
+// numbers is still [1, 2, 3, 4]
+
+
 // function Person(name)
 // {
 //     this.name = name;
