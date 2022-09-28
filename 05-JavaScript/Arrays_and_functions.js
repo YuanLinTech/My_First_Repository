@@ -108,6 +108,21 @@ console.log(fruit); // undefined
 
 // }
 
+const arr = [1, 2];
+console.log(arr); // Output: [ 1, 2 ]
+
+arr.length = 5; // set array length to 5 while currently 2.
+console.log(arr); // Output: [ 1, 2, <3 empty items> ]
+
+arr.forEach((element) => console.log(element));
+// Output: 
+// 1
+// 2
+
+const myArr = new Array(2);
+console.log(myArr.length); // Output: 2
+console.log(myArr[0]);     // Output: undefined
+
 function func1(a, b, c) {
     console.log(arguments[0]);
     // expected output: 1
@@ -152,8 +167,8 @@ console.log(myCar);
       'purchased 1997'
    ] */
 
-const arr = [1, 2, 3];
-const obj = { ...arr }; 
+const Arr = [1, 2, 3];
+const obj = { ...Arr}; 
 console.log(obj);// { '0': 1, '1': 2, '2': 3 }
 
 var array = ['a', 'b'];
