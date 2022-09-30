@@ -121,7 +121,8 @@ arr.forEach((element) => console.log(element));
 
 const myArr = new Array(2);
 console.log(myArr.length); // Output: 2
-console.log(myArr[0]);     // Output: undefined
+console.log(myArr); // Output: [ <2 empty items> ]
+console.log(myArr[0]); // Output: undefined
 
 function func1(a, b, c) {
     console.log(arguments[0]);
@@ -170,6 +171,20 @@ console.log(myCar);
 const Arr = [1, 2, 3];
 const obj = { ...Arr}; 
 console.log(obj);// { '0': 1, '1': 2, '2': 3 }
+
+const numbers = [1, 2, 3, 4, 5];
+
+if (numbers.length > 3) 
+{
+    numbers.length = 3;
+}
+
+console.log(numbers); // Output: [1, 2, 3]
+console.log(numbers.length); // Output: 3
+
+const numbers1 = [];
+numbers1.length = 3;
+console.log(numbers1); // Output: [ <3 empty items> ]
 
 var array = ['a', 'b'];
 var elements = [0, 1, 2];
