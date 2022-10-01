@@ -109,9 +109,10 @@ var arguments = [1, 2, 3];
 const arr1 = () => arguments[0];
 console.log(arr1()); // 1
 
-const Foo = () => { };
-console.log(Foo.prototype); // undefined
-// const foo = new Foo(); // TypeError: Foo is not a constructor
+// Arrow functions do not have a prototype property.
+const emptyArrowFunc = () => { };
+console.log(emptyArrowFunc.prototype); // undefined
+// const emptyArrowFunc = new emptyArrowFunc(); // TypeError: Foo is not a constructor
 
 const fruitInventory = 
 [
@@ -209,6 +210,29 @@ function sortArguments()
 }
 console.log(sortArguments(5, 3, 7, 1)); // [ 1, 3, 5, 7 ]
 
+// Spread syntax
+const num = ['one', 'two', 'three'];
+const [red, ...rest] = num;
+console.log(red); // Output: 'one'
+console.log(rest); // Output: ['two', 'three']
+
+const newNum = [...num, 'four'];
+console.log(newNum); // Output: ['two', 'three', 'four']
+
+/* When the entry containing the value two is reached, the first entry of the whole array is shifted off
+— resulting in all remaining entries moving up one position. 
+Because element 'four' is now at an earlier position in the array, 'three' will be skipped.
+The forEach loop will proceed to the third element of the modified array, which is 'four'. */
+const words = ['one', 'two', 'three', 'four'];
+words.forEach((word) => {
+    console.log(word);
+    if (word === 'two') {
+        words.shift(); //'one' will delete from array
+    }
+}); // one // two // four
+
+console.log(words); // ['two', 'three', 'four']
+
 
 // index goes from 0, so the filterNumbers are 1,2,3 and undefined.
 // filteredNumbers is [1, 2, 3, undefined]
@@ -289,9 +313,3 @@ console.log(sortArguments(5, 3, 7, 1)); // [ 1, 3, 5, 7 ]
 // console.log(GiveUp);
 
 // // Parentheses are required around assignment statements
-
-// // Spread syntax
-// const foo = ['one', 'two', 'three'];
-// const [red, ...rest] = foo;
-
-// const newFoo = [...foo, 'four'];
