@@ -6,12 +6,12 @@
     <h2>The innerHTML Property</h2>
 
     <button onclick="myFunction()">Try it</button>
-    <p id="demo">Click the button double this text.<br></p> <!-- <br> ensures the double text is displayed on a new line -->
+    <p id="demo">Click the button to double this text.<br></p> <!-- <br> ensures the double text is displayed on a new line -->
 
     <script>
         function myFunction() {
             const element = document.getElementById("demo");
-            element.innerHTML = element.innerHTML + element.innerHTML;
+            element.innerHTML += element.innerHTML;
         }
     </script>
 
