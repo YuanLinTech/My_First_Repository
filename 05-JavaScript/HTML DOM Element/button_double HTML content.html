@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>The Element Object</h1>
+    <h2>The innerHTML Property</h2>
+
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo">Click the button double this text.<br></p>
+
+    <script>
+        function myFunction() {
+            const element = document.getElementById("demo");
+            element.innerHTML = element.innerHTML + element.innerHTML;
+        }
+    </script>
+
+</body>
+
+</html>
