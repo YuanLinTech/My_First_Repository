@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <div id="myDIV">
+        <h2 id="demo">A heading with id="demo" in div</h2>
+        <p id="example">A paragraph with id="example" in div.</p>
+        <p id="demo">A paragraph with id="demo" in div.</p>
+        <p id="demo">Another paragraph with id="demo" in div.</p>
+    </div>
+
+    <p>Click the button to change the text of the first p element in div with id="demo".</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            x.querySelector("p#demo").innerHTML = "Hello World!";
+        }
+    </script>
+
+</body>
+
+</html>
