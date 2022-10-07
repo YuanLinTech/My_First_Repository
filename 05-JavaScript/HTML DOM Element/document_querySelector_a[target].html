@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        a[target] {
+            background-color: yellow;
+        }
+
+        a[target=_blank] {
+            background-color: orange;
+        }
+
+        #myDIV {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>The CSS selector a[target=_blank] makes sure that all links with a target attribute equal to "_blank" gets an
+        orange background.</p>
+
+    <div id="myDIV">
+        Three links inside div:
+        <a href="https://www.w3schools.com">w3schools.com</a>
+        <a href="http://www.disney.com" target="_top">disney.com</a>
+        <a href="http://www.wikipedia.org" target="_blank">wikipedia.org</a>
+    </div>
+
+    <p>Click the button to add a red border to the first link that has a target attribute inside the div element.</p>
+
+    <button onclick="addRedBorder()">Add red border</button>
+
+    <script>
+        function addRedBorder() 
+        {
+            var x = document.getElementById("myDIV");
+            x.querySelector("a[target]").style.border = "5px solid red";
+        }
+    </script>
+
+    <p>Click the button to add a blue border to the first link that has a target attribute equal to "_blank" inside the
+        div element.</p>
+
+    <button onclick="addBlueBorder()">Add blue border</button>
+
+    <script>
+        function addBlueBorder() 
+        {
+            var x = document.getElementById("myDIV");
+            x.querySelector("a[target=_blank]").style.border = "5px solid blue";
+        }
+    </script>
+
+</body>
+
+</html>
