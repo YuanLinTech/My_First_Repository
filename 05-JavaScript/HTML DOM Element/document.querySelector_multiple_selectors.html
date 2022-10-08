@@ -6,12 +6,13 @@
     <h1>The Document Object</h1>
     <h2>The querySelector() Method</h2>
 
-    <p>Select the first h3 or the first h4:</p>
+    <p>Select the first h3 or h4 element, whichever comes first:</p>
     <h3>A h3 element</h3>
     <h4>A h4 element</h4>
 
     <script>
-        document.querySelector("h3, h4").style.backgroundColor = "red";
+        document.querySelector("h3, h4").style.backgroundColor = "red"; // This adds a background color to the first <h3> element in <div>.
+        // However, if the <h4> element was placed before the <h3> element in <div>, the <h4> element is the one that will get the red background color.
     </script>
 
 </body>

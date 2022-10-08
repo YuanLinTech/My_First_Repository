@@ -1,0 +1,25 @@
+</style>
+</head>
+
+<body>
+
+    <div id="myDIV">
+        <h2 class="example">A heading with class="example" in div</h2>
+        <p class="example">A paragraph with class="example" in div.</p>
+        <p class="example">Another paragraph with class="example" in div.</p>
+    </div>
+
+    <p>Click the button to add a background color to the second p element in DIV with class="example" (index 1).</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV").querySelectorAll("p.example");
+            x[1].style.backgroundColor = "red";
+        }
+    </script>
+
+</body>
+
+</html>
