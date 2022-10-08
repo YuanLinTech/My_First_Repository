@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>The Document Object</h1>
+    <h2>The querySelectorAll() Method</h2>
+
+    <p>Set the background color of all h3, div and span elements:</p>
+
+    <h1>A H1 element</h1>
+    <h2>A H2 element</h2>
+    <h3>A H2 element</h3>
+    <div>A DIV element</div>
+    <p>A p element.</p>
+    <p>A p element with a <span style="color:brown;">span</span> element inside.</p>
+
+    <script>
+        const nodeList = document.querySelectorAll("h3, div, span");
+        for (let i = 0; i < nodeList.length; i++) 
+        {
+            nodeList[i].style.backgroundColor = "red";
+        }
+    </script>
+
+</body>
+
+</html>
