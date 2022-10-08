@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #myDIV 
+        {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="myDIV">
+        <h2>A h2 element in div</h2>
+        <h3>A h3 element in div</h3>
+    </div>
+
+    <script>
+        var x = document.getElementById("myDIV");
+        x.querySelector("h2, h3").style.backgroundColor = "red"; // This adds a background color to the first <h2> element in <div>.
+        // However, if the <h3> element was placed before the <h2> element in <div>, the <h3> element is the one that will get the red background color.
+    </script>
+
+</body>
+
+</html>
