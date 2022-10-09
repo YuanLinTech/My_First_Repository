@@ -21,4 +21,5 @@ const main = () =>{
 const greeting = (name) =>{
     console.log(`Hi, ${name}`);
     console.log("Nice to meet you");
+    console.log('===')
 }
