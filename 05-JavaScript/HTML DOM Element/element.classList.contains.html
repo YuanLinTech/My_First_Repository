@@ -21,18 +21,25 @@
 
 <body>
     <h1>The DOMToken Object</h1>
-    <h2>The contains() Method</h2>
+    <h2>The contains() and remove() Methods</h2>
+
+    <p>Click "Remove" to remove "anotherClass", if "myDIV" has a"myStyle" class.</p>
+    <button onclick="myFunction()">Remove</button>
+
 
     <div id="myDIV" class="myStyle anotherClass thirdClass">
         <p>I am myDIV.</p>
     </div>
 
-    <p>Does the "myDIV" element have a class of "myStyle"?</p>
-    <p id="demo"></p>
-
     <script>
-        let x = document.getElementById("myDIV").classList.contains("myStyle");
-        document.getElementById("demo").innerHTML = x;
+        function myFunction() 
+        {
+            const element = document.getElementById("myDIV");
+            if (element.classList.contains("myStyle")) 
+            {
+                element.classList.remove("anotherClass");
+            }
+        }
     </script>
 
 </body>
