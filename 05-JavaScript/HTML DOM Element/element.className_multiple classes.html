@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .myStyle {
+        background-color: coral;
+        padding: 16px;
+    }
+
+    .test {
+        text-align: center;
+    }
+
+    .example {
+        font-size: 25px;
+    }
+</style>
+
+<body>
+    <h1>The Element Object</h1>
+    <h2>The className Property</h2>
+
+    <div id="myDIV" class="myStyle test example">
+        I am a DIV element with multiple classes
+    </div>
+
+    <p>The class attribute of "myDIV" is:</p>
+    <p id="demo"></p>
+
+    <script>
+let value = document.getElementById("myDIV").className;
+document.getElementById("demo").innerHTML = value;
+    </script>
+
+</body>
+
+</html>
