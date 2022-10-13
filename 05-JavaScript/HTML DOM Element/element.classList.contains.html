@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .myStyle 
+    {
+        background-color: coral;
+        padding: 16px;
+    }
+
+    .anotherClass 
+    {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .thirdClass 
+    {
+        text-transform: uppercase;
+    }
+</style>
+
+<body>
+    <h1>The DOMToken Object</h1>
+    <h2>The contains() Method</h2>
+
+    <div id="myDIV" class="myStyle anotherClass thirdClass">
+        <p>I am myDIV.</p>
+    </div>
+
+    <p>Does the "myDIV" element have a class of "myStyle"?</p>
+    <p id="demo"></p>
+
+    <script>
+        let x = document.getElementById("myDIV").classList.contains("myStyle");
+        document.getElementById("demo").innerHTML = x;
+    </script>
+
+</body>
+
+</html>
