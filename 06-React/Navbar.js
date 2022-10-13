@@ -1,6 +1,12 @@
 import NavbarItem from './components/NavbarItem'
 import './Navbar.css'
 
+const Item = ({
+    
+}
+
+)
+
 const Navbar = () => {
     <div className = "navbar">
         {/* <a className = "navbar__item" href = "HOME">Home</a>
