@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .myStyle 
+    {
+        background-color: coral;
+        padding: 16px;
+    }
+</style>
+
+<body>
+    <h1>The Element Object</h1>
+    <h2>The className Property</h2>
+
+    <button onclick="myFunction()">Change</button>
+    <p>Click "Change" to change the font size, if "myDIV" has a "myStyle" class.</p>
+
+    <div id="myDIV" class="myStyle">
+        <p>I am myDIV.</p>
+    </div>
+
+    <script>
+        function myFunction() 
+        {
+            const element = document.getElementById("myDIV");
+            if (element.className === "myStyle") 
+            { 
+                element.style.fontSize = "30px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
