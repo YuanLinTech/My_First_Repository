@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .myStyle 
+    {
+        background-color: coral;
+        padding: 16px;
+    }
+
+    .anotherClass 
+    {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .thirdClass 
+    {
+        text-transform: uppercase;
+    }
+</style>
+
+<body>
+    <h1>The DOMToken Object</h1>
+    <h2>The remove() Method</h2>
+
+    <button onclick="myFunction()">Remove</button>
+    <p>Click "Remove" to remove multiple classes from myDIV.</p>
+
+    <div id="myDIV" class="myStyle anotherClass thirdClass">
+        <p>I am myDIV.</p>
+    </div>
+
+    <script>
+    function myFunction() 
+    {
+        document.getElementById("myDIV").classList.remove("myStyle", "anotherClass", "thirdClass");
+    }
+    </script>
+
+</body>
+
+</html>
