@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p {
+            display: none;
+            background-color: yellow;
+            padding: 10px;
+            border: solid;
+            width: 150px;
+            box-sizing: border-box;
+        }
+
+        /* Selects a p element which is a descendant of a div element that has a mouse hovering over it.*/
+        div:hover p {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>Hover over this div element to show the p element
+        <p>Haha! Here I am!</p> <!-- Only displayed when its parent div element has a mouse hovering over it. -->
+    </div>
+
+</body>
+
+</html>
