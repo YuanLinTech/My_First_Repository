@@ -3,7 +3,7 @@ import Page from './components/Page'
 import Logo from './components/Logo/Logo'
 import Navbar from './components/Navbar'
 import './Header.css'
-import './App.js'
+import './App.js.js'
 
 const App = () => (
     <header className = "nav">
@@ -18,3 +18,5 @@ const App = () => (
 
 export default Header
 export default App
+
+Const src = 
