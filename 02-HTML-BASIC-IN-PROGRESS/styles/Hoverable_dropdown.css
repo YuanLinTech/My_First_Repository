@@ -1,3 +1,9 @@
+/* Position the dropdown button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .dropBox{
     background-color: #4CAF50;
     color: white;
@@ -13,22 +19,12 @@
     content: url("../images/reverse_caret.png");
 }
 
-.myBox{
-    position: relative;
-}
-
 .dropBox:hover {
     background-color: #3e8e41;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-/* Position the dropdown button */
-.dropdown {
-    position: absolute;
-    display: inline-block;
 }
 
 /* Selecting all elements in the dropdown menu*/
