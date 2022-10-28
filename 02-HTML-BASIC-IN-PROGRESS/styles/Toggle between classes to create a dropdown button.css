@@ -1,3 +1,9 @@
+/* Position the dropdown button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -13,18 +19,9 @@
     content: url("../images/reverse_caret.png");
 }
 
-.myBtn{
-    position: relative;
-}
-
+/* Change the background colour of the button when it's hovered over */
 .dropbtn:hover {
     background-color: #3e8e41;
-}
-
-/* Position the dropdown button */
-.dropdown {
-    position: absolute;
-    display: inline-block;
 }
 
 /* Selecting all elements in the dropdown menu*/
