@@ -15,9 +15,10 @@
 </head>
 
 <body>
-    <!-- The second value will be selected initially -->
-    <select name="choice">
+    <label for="value-select">Choose a value:</label>
+    <select name="choice" id="value">
         <option value="first">First Value</option>
+        <!-- The second value will be selected initially -->
         <option value="second" selected>Second Value</option>
         <option value="third">Third Value</option>
     </select>
@@ -49,6 +50,8 @@
     </select>
 
     <label for="pet-multiple-group-select">Please choose one or more pets:</label>
+    <!-- Multiple options are selectable because we've included the multiple attribute.
+    The size attribute causes only 4 lines to display at a time; you can scroll to view all the options. -->
     <select name="pets" id="pet-multiple-group-select" multiple size="4">
         <optgroup label="4-legged pets">
             <option value="dog">Dog</option>
