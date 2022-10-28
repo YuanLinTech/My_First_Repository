@@ -23,7 +23,7 @@
     </select>
 
     <label for="dino-select">Choose a dinosaur:</label>
-    <select id="dino-select">
+    <select id="dino-select" name="dinosaurs">
         <optgroup label="Theropods">
             <option>Tyrannosaurus</option>
             <option>Velociraptor</option>
@@ -35,6 +35,33 @@
             <option>Apatosaurus</option>
         </optgroup>
     </select>
+
+    <label for="pet-select">Choose a pet:</label>
+    
+    <select name="pets" id="pet-select">
+        <option value="">--Please choose an option--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+    </select>
+
+    <label for="pet-multiple-group-select">Please choose one or more pets:</label>
+    <select name="pets" id="pet-multiple-group-select" multiple size="4">
+        <optgroup label="4-legged pets">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster" disabled>Hamster</option>
+        </optgroup>
+        <optgroup label="Flying pets">
+            <option value="parrot">Parrot</option>
+            <option value="macaw">Macaw</option>
+            <option value="albatross">Albatross</option>
+        </optgroup>
+    </select>
+
 </body>
 
 </html>
