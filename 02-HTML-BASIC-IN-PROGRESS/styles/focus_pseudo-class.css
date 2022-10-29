@@ -1,9 +1,12 @@
-.red-input:focus {
-    background: yellow;
-    color: red;
+label,select {
+    display: block;
+    margin-top: 1em;
 }
 
-.blue-input:focus {
-    background: yellow;
-    color: blue;
+input:focus {
+    background-color: lightblue;
+}
+
+select:focus {
+    background-color: #f0f0f0;
 }
