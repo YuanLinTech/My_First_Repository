@@ -106,7 +106,7 @@ body{
     height: auto;
 }
 
-aside{
+.related-posts{
     background-color: #f7f7f7;
     border: 5px solid #1098ab;
     width: 500px;
