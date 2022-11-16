@@ -3,18 +3,47 @@
 
 <head>
     <style>
+        *{
+            color: black;
+        }
+
         button {
-            color: red;
+            color: orange;
         }
 
         .branding {
             color: blue;
         }
+
+        a{
+            display: block;
+            color: red;
+        }
+
+        a[target="_blank"]{
+            color: teal;
+        }
+
+        .myClass{
+            color:brown;
+        }
+
+        #myID{
+            color:darkgreen;
+        }
+
     </style>
 </head>
 
 <body>
-    <button class="branding">Hello, Specificity!</button>
+    <p>* selector is applied.</p>
+    <button class="branding">.branding selector is applied</button>
+    <a href="https://www.instagram.com">a{} selector is applied</a>
+    <a href="https://www.ibm.com" target="_blank">a[target="_blank"] selector is applied</a>
+    <a href="https://www.pinterest.com" class="myClass" target="_blank">Although the a[target="_blank"] selector and the .myClass selector have the same
+        specificity, a[target="_blank"] selector is applied. </a>
+    <a href="https://www.microsoft.com" target="_blank" id="myID">#myID selector is applied</a>
+
 </body>
 
 </html>
