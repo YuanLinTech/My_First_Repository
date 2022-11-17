@@ -32,17 +32,22 @@
             color:darkgreen;
         }
 
+        code {
+            background-color: #eee;
+            padding: 0 3px;
+        }
+
     </style>
 </head>
 
 <body>
-    <p>* selector is applied.</p>
-    <button class="branding">.branding selector is applied</button>
-    <a href="https://www.instagram.com">a{} selector is applied</a>
-    <a href="https://www.ibm.com" target="_blank">a[target="_blank"] selector is applied</a>
-    <a href="https://www.pinterest.com" class="myClass" target="_blank">Although the a[target="_blank"] selector and the .myClass selector have the same
-        specificity, a[target="_blank"] selector is applied. </a>
-    <a href="https://www.microsoft.com" target="_blank" id="myID">#myID selector is applied</a>
+    <p><code>*</code> selector is applied.</p>
+    <button class="branding"><code>.branding selector</code> is applied</button>
+    <a href="https://www.instagram.com"><code>a{}</code> selector is applied</a>
+    <a href="https://www.ibm.com" target="_blank"><code>a[target="_blank"]</code> selector is applied</a>
+    <a href="https://www.pinterest.com" class="myClass" target="_blank">Although the <code>a[target="_blank"]</code> selector and the <code>.myClass</code> selector have the same
+        specificity, <code>a[target="_blank"]</code> selector is applied. </a>
+    <a href="https://www.microsoft.com" target="_blank" id="myID"><code>#myID</code> selector is applied</a>
 
 </body>
 
