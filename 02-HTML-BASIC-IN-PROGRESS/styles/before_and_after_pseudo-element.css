@@ -1,14 +1,16 @@
 .topic-games::before {
     content: url("https://img.icons8.com/ios-filled/24/controller.png")/ "Game Controller icon by Icons8";
+    margin-right: 4px;
 }
 
 .topic-weather::before {
     content: url("https://img.icons8.com/fluency/24/partly-cloudy-day.png")/ "Partly Cloudy Day icon by Icons8";
+    margin-right: 4px;
 }
 
 .topic-hot::before {
     content: url("https://img.icons8.com/emoji/24/fire.png")/"Fire icon by Icons8";
-    margin-right: 6px;
+    margin-right: 4px;
 }
 
 .exciting-text::after {
@@ -30,4 +32,16 @@
     background-color: #ffba10;
     border-color: black;
     border-style: dotted;
+}
+
+a::after {
+    content: ' ('attr(href)')';
+}
+
+.dead-link {
+    text-decoration: line-through;
+}
+
+.dead-link::after {
+    content: url("https://img.icons8.com/tiny-color/16/multiply.png")/"Multiply icon by Icons8";
 }
