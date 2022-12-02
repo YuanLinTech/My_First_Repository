@@ -10,7 +10,7 @@ li {
     float: left;
 }
 
-/* Style each link in the navigation bar */
+/* Style each link and button in the navigation bar */
 li>a,.dropbtn {
     display: inline-block;
     position: relative;
@@ -20,6 +20,9 @@ li>a,.dropbtn {
     text-decoration: none;
 }
 
+/* Style the buttons in the navigation bar when a mouse hovers over it.
+.dropdown:hover .dropbtn ensures that the dropdown button will still be styled 
+when the mouse hovers over a link in the dropdown menu. */
 li>a:hover,.dropdown:hover .dropbtn {
     background-color: red;
 }
@@ -37,6 +40,7 @@ li.dropdown {
     z-index: 1;
 }
 
+/* Style the link in the dropdown menu */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -45,10 +49,12 @@ li.dropdown {
     text-align: left;
 }
 
+/* Style the link in the dropdown menu when it is hovered */
 .dropdown-content a:hover {
     background-color: #d0d0d0;
 }
 
+/* Display the link in the dropdown menu when the dropdown button is hovered */
 .dropdown:hover .dropdown-content {
     display: block;
 }
