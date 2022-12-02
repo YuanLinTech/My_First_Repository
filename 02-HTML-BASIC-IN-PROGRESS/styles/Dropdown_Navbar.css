@@ -10,6 +10,7 @@ li {
     float: left;
 }
 
+/* Style each link in the navigation bar */
 li>a,.dropbtn {
     display: inline-block;
     position: relative;
