@@ -8,6 +8,7 @@ td {
     text-align: center;
 }
 
+/* Style the even rows except the header cells */
 tr:nth-child(even) {
     background-color: #eee;
 }
