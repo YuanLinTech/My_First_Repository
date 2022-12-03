@@ -5,13 +5,14 @@
     <h1>The Element Object</h1>
     <h2>The innerHTML Property</h2>
 
-    <button onclick="myFunction()">Try it</button>
-    <p id="demo">Click the button to double this text.<br></p> <!-- <br> ensures the double text is displayed on a new line -->
+    <button onclick="myFunction()">Click the button to double the text below</button>
+    <p id="demo">Hello world.</p>
 
     <script>
+        // <br> ensures the doubled text is displayed on a new line
         function myFunction() {
             const element = document.getElementById("demo");
-            element.innerHTML += element.innerHTML;
+            element.innerHTML += "<br>" + element.innerHTML;
         }
     </script>
 
