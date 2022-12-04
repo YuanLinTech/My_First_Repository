@@ -12,5 +12,5 @@ dd {
 }
 
 dl.metadata dt::after{
-    content: ": ";
+    content: ":";
 }
