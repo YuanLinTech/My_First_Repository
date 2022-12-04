@@ -9,3 +9,7 @@ dl,dd {
 dd {
     margin-bottom: 1em;
 }
+
+dl.metadata dt::after{
+    content: ": ";
+}
