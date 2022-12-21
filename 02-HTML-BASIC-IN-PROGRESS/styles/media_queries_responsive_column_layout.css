@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create four column blocks that float next to each other in the same row */
+/* On screens that are wider than 992px, display four column blocks in the same row */
+.short-column {
+    float: left;
+    height: 150px;
+    width: 25%;
+    padding: 20px;
+}
+
+.tall-column {
+    float: left;
+    height: 300px;
+    width: 25%;
+    padding: 20px;
+}
+
+/* Clear floats after the columns so that if the columns have different heights, 
+  the border edge of the element immediately after the columns is moved down below the margin edge of all columns.*/
+div.row+p {
+    margin-top: 20px;
+    clear: both;
+}
+
+/* On screens that are between 600px and 992px wide, display the four column blocks in two rows,
+  with each row having two column blocks */
+@media screen and (max-width: 992px) {
+
+    .short-column,
+    .tall-column {
+        width: 50%;
+    }
+}
+
+/* On screens that are 600px wide or less, make the four column blocks stack on top of each other 
+  in four different rows instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .short-column,
+    .tall-column {
+        width: 100%;
+    }
+}
