@@ -19,10 +19,10 @@
 }
 
 /* Clear floats after the columns so that if the columns have different heights, 
-  the border edge of the element immediately after the columns is moved down below the margin edge of all columns.*/
-div.row+p {
-    margin-top: 20px;
+  the border edge of the element located immediately after the columns is moved down to the bottom margin edge of all columns.*/
+div.row + p {
     clear: both;
+    margin: 20px;
 }
 
 /* On screens that are between 600px and 992px wide, display the four column blocks in two rows,
