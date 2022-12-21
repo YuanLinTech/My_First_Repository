@@ -19,7 +19,7 @@
 }
 
 /* Clear floats after the columns so that if the columns have different heights, 
-  the border edge of the element located immediately after the columns is moved down to the bottom margin edge of all columns.*/
+  the border edge of the element located immediately after the columns is moved down to the bottom margin edge of the tallest column.*/
 div.row + p {
     clear: both;
     margin: 20px;
