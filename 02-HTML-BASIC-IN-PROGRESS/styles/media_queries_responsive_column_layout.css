@@ -28,7 +28,6 @@ div.row+p {
 /* On screens that are between 600px and 992px wide, display the four column blocks in two rows,
   with each row having two column blocks */
 @media screen and (max-width: 992px) {
-
     .short-column,
     .tall-column {
         width: 50%;
@@ -38,7 +37,6 @@ div.row+p {
 /* On screens that are 600px wide or less, make the four column blocks stack on top of each other 
   in four different rows instead of next to each other */
 @media screen and (max-width: 600px) {
-
     .short-column,
     .tall-column {
         width: 100%;
