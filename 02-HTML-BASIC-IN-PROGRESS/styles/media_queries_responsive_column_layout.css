@@ -22,7 +22,7 @@
   the border edge of the element located immediately after the columns is moved down to the bottom margin edge of the tallest column.*/
 div.row + p {
     clear: both;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 /* On screens that are between 600px and 992px wide, display the four column blocks in two rows,
