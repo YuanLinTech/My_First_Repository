@@ -25,20 +25,11 @@ select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
     border: 1px solid #ccc;
 }
 
 input[type="checkbox"]{
     margin: 8px 0;
-}
-
-label[for="female"]{
-    margin: 8px 4px 8px 0px;
-}
-
-label[for="male"]{
-    margin: 8px 4px 8px 4px;
 }
 
 input[type=submit],
