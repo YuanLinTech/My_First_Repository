@@ -8,11 +8,16 @@ body{
 }
 
 section{
-    width:50%;
-    min-width:300px;
-    max-width:600px;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
     background-color: #f2f2f2;
-    padding:20px;
+    padding: 20px;
+}
+
+label{
+    display: block;
+    margin: 5px 0px;
 }
 
 *{
@@ -21,19 +26,26 @@ section{
 
 input[type="text"],
 input[type="password"],
-select {
+select{
     width: 100%;
-    padding: 12px 20px;
+    padding: 10px 10px;
     margin: 8px 0;
     border: 1px solid #ccc;
 }
 
-input[type="checkbox"]{
-    margin: 8px 0;
+input#female[type="radio"],
+input#eating[type="checkbox"]{
+    margin: 8px 5px 8px 0px;
 }
 
-input[type=submit],
-select {
+input#male[type="radio"],
+input#drinking[type="checkbox"]
+input#sleeping[type="checkbox"]
+{
+    margin: 8px 5px;
+}
+
+input[type="submit"]{
     width: 100%;
     background:#4caf50;
     color:#fff;

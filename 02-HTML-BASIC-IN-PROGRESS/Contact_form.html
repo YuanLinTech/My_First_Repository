@@ -19,23 +19,33 @@
     <h3>Contact Us</h3>
     <section>
         <form method="post">
-            <label for="fname">First Name</label>
-            <input id="fname" type="text" name="First Name" placeholder="Your first name is...">
-            <label for="lname">Last Name</label>
-            <input id="lname" type="text" name="Last Name" placeholder="Your last name is...">
+            <label for="fname">First Name*</label>
+            <input id="fname" type="text" name="First Name" placeholder="Your first name is..." required>
+            <label for="lname">Last Name*</label>
+            <input id="lname" type="text" name="Last Name" placeholder="Your last name is..." required>
+            <label for="email">Email*</label>
+            <input id="email" type="text" name="Email" placeholder="Your email address is..." required>
             <label for="country">Country</label>
             <select name="country" id="country">
                 <option value="Australia">Australia</option>
-                <option value="United State">United State</option>
+                <option value="United State">United States</option>
                 <option value="Canada">Canada</option>
             </select>
-            <div>Gender</div>
-            <!-- For "checkbox" and "radio" input types, 
-                inputs need to have the same "name" attribute to avoid they being selected at the same time-->
-            
-            <input type="checkbox" name="gender" value="female" id="female" checked> Female
-            <input type="checkbox" name="gender" value="male" id="male"> Male
+
+            <!-- To make sure that only one radio button in a group can be selected, 
+            set all the value of the "name" attribute of the radio buttons to the same value  -->
+            <span>Gender:</span>
+            <input type="radio" name="gender" value="female" id="female" checked>Female
+            <input type="radio" name="gender" value="male" id="male">Male
             <br>
+            <!-- However, setting all the value of the "name" attribute of a group of checkboxes to the same value 
+            does not prevent multiple checkboxes from being checked at the same time. 
+            You have to use JavaScript to prevent multiple checkboxes from being checked at the same time.-->
+            <span>Hobby:</span>
+            <input type="checkbox" name="hobby" value="eating" id="eating">Eating
+            <input type="checkbox" name="hobby" value="drinking" id="drinking">Drinking
+            <input type="checkbox" name="hobby" value="sleeping" id="sleeping">Sleeping
+
             <label for="pwd">Password</label>
             <input type="password" id="pwd" name="myPassword" placeholder="Your password...">
             <input type="submit" value = "Submit">
