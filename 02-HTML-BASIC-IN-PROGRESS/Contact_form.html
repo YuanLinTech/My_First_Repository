@@ -11,10 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles/Contact_form.css">
-    
+
     <title>Demo Contact Form</title>
 
 </head>
+<script src="05-JavaScript/checkOnlyOne.js"></script>
 
 <body>
     <h3>Contact Us</h3>
@@ -271,9 +272,9 @@
             does not prevent multiple checkboxes from being checked at the same time. 
             You have to use JavaScript to prevent multiple checkboxes from being checked at the same time.-->
             <span>Hobby:</span>
-            <input type="checkbox" name="hobby" value="eating" id="eating">Eating
-            <input type="checkbox" name="hobby" value="drinking" id="drinking">Drinking
-            <input type="checkbox" name="hobby" value="sleeping" id="sleeping">Sleeping
+            <input type="checkbox" class="hobbies" name="hobby" value="eating" id="eating">Eating
+            <input type="checkbox" class="hobbies" name="hobby" value="drinking" id="drinking">Drinking
+            <input type="checkbox" class="hobbies" name="hobby" value="sleeping" id="sleeping">Sleeping
 
             <!-- Accepts .png and .jpeg image files, as well as .docx and .pdf files -->
             <label for="file-upload">Upload file</label>
