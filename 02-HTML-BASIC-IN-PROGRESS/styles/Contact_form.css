@@ -9,8 +9,7 @@ body{
 
 section{
     width: 50%;
-    min-width: 300px;
-    max-width: 600px;
+    max-height: 90%;
     background-color: #f2f2f2;
     padding: 20px;
 }
