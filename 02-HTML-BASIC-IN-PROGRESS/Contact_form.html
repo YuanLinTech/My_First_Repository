@@ -3,7 +3,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +12,7 @@
     <link rel="stylesheet" href="styles/Contact_form.css">
 
     <title>Demo Contact Form</title>
-    <script type="text/javascript" src="../05-JavaScript/checkOnlyOne.js"></script>
+    <script src="../05-JavaScript/checkOnlyOne.js"></script>
 </head>
 
 
@@ -272,9 +271,9 @@
             does not prevent multiple checkboxes from being checked at the same time. 
             You have to use JavaScript to prevent multiple checkboxes from being checked at the same time.-->
             <span>Hobby:</span>
-            <input type="checkbox" class="hobbies" name="hobby" value="eating" id="eating">Eating
-            <input type="checkbox" class="hobbies" name="hobby" value="drinking" id="drinking">Drinking
-            <input type="checkbox" class="hobbies" name="hobby" value="sleeping" id="sleeping">Sleeping
+            <input type="checkbox" onclick="checkOnlyOne(this.value)" class="hobbies" name="hobby" value="eating" id="eating">Eating
+            <input type="checkbox" onclick="checkOnlyOne(this.value)" class="hobbies" name="hobby" value="drinking" id="drinking">Drinking
+            <input type="checkbox" onclick="checkOnlyOne(this.value)" class="hobbies" name="hobby" value="sleeping" id="sleeping">Sleeping
 
             <!-- Accepts .png and .jpeg image files, as well as .docx and .pdf files -->
             <label for="file-upload">Upload file</label>

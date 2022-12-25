@@ -56,7 +56,7 @@ input#eating[type="checkbox"]{
 }
 
 input#male[type="radio"],
-input#drinking[type="checkbox"]
+input#drinking[type="checkbox"],
 input#sleeping[type="checkbox"]
 {
     margin: 8px 5px;
