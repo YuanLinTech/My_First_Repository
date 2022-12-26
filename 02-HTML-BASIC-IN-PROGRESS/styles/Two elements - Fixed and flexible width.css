@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#parent {
+    display: flex;
+}
+
+#aside {
+    width: 170px; /* You, be fixed to 170 */
+    background: #1CEA6E;
+    padding: 24px;
+}
+
+#main {
+    flex: 1;
+    /* You... fill the remaining space */
+    background: #C0FFEE;
+    padding: 24px;
+}
