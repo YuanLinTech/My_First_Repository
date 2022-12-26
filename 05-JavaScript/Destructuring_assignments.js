@@ -34,6 +34,18 @@ const obj1 = { a: 1, b: 2 };
 // numbers1[1] = obj1.b;
 console.log(numbers1); // Output: [ 1, 2 ]
 
+/*
+Note that the equivalent binding pattern of the code above is not valid syntax:
+
+const numbers = [];
+const obj = { a: 1, b: 2 };
+const { a: numbers[0], b: numbers[1] } = obj;
+
+This is equivalent to:
+const numbers[0] = obj.a;
+const numbers[1] = obj.b;
+Which definitely is not valid.*/
+
 /* const numbers2 = [];
 const obj2 = { a: 1, b: 2 };
 const { a: numbers2[0], b: numbers2[1] } = obj2; // SyntaxError: Identifier 'numbers2' has already been declared */
