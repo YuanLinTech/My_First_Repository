@@ -3,19 +3,44 @@
     margin: 0;
 }
 
-#parent {
-    display: flex;
+:root {
+    --width-aside: 170px;
 }
 
-#aside {
-    width: 170px; /* You, be fixed to 170 */
+.break{
+    width: 100%;
+    height: 20px;
+}
+
+#parent1{
+    display: flex;
+    margin: 10px;
+}
+
+#aside1 {
+    width: var(--width-aside); /* You, be fixed to 170px */
     background: #1CEA6E;
     padding: 24px;
 }
 
-#main {
-    flex: 1;
-    /* You... fill the remaining space */
+#main1 {
+    flex: 1; /* You... fill the remaining space */
     background: #C0FFEE;
+    padding: 24px;
+}
+
+#aside2 {
+    background: #1CEA6E;
+    width: var(--width-aside); /* You, be fixed to 170px */
+    margin: 10px 0px 10px 10px;
+    float: left;
+    padding: 24px;
+}
+
+#main2 {
+    background: #C0FFEE;
+    width: calc(100% - 20px - var(--width-aside));
+    margin: 10px 10px 10px 0px;
+    float: left;
     padding: 24px;
 }
