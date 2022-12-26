@@ -1,21 +1,50 @@
-#parent {
-    display: table;
-    border-collapse: collapse;
-    width: 100%;
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
 
-#parent>div {
+:root {
+    --width-aside: 170px;
+}
+
+#parent {
+    display: table;
+    width: calc(100% - 20px);
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+#parent > div {
     display: table-cell;
 }
 
-#aside {
-    width: 170px;
-    /* You, be fixed to 170 */
+#aside1 {
+    width: var(--width-aside); /* You, be fixed to 170px */
     background: #1CEA6E;
     padding: 24px;
 }
 
-#main {
+#main1 {
     background: #C0FFEE;
+    padding: 24px;
+}
+
+#aside2 {
+    background: #1CEA6E;
+    width: var(--width-aside);
+    /* You, be fixed to 170px */
+    margin: 0px 0px 10px 10px;
+    /* The top margin of the #aside2 element should collapse with the bottom margin of the #parent element.
+    However, it doesn't because margins of floating elements never collapse. */
+    float: left;
+    padding: 24px;
+}
+
+#main2 {
+    background: #C0FFEE;
+    margin: 10px 10px 10px 0px; 
+    /* The top margin of the #main2 element collapses with the bottom margin of the #parent element 
+    (the margins of adjacent siblings are collapsed) */
+    overflow: auto;
     padding: 24px;
 }
