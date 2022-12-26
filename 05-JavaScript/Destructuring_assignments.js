@@ -53,7 +53,7 @@ console.log(numbers2); // Output: [ 1, 2 ]
 // Which definitely is not valid. */
 
 var { a, ...others } = { a: 1, b: 2, c: 3 };
-console.log(a); 1
+console.log(a); // Output: 1
 console.log(others); // Output: { b: 2, c: 3 }
 
 const [first, ...others2] = [1, 2, 3];
