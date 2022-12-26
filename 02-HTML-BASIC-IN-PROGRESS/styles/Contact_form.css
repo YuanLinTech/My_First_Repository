@@ -36,7 +36,7 @@ div.phone{
 }
 
 select.phone{
-    width: 150px;
+    width: 150px; /* You, be fixed to 170 */
     height: 40px;
     padding: 10px 10px;
     margin: 5px 5px 5px 0px;
@@ -45,7 +45,7 @@ select.phone{
 
 input[type="tel"]
 {
-    flex: 1;
+    flex: 1; /* You... fill the remaining space */
     height: 40px;
     padding: 10px;
     margin: 5px 0px 5px 5px;
