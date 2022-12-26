@@ -1,0 +1,21 @@
+#parent {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#parent>div {
+    display: table-cell;
+}
+
+#aside {
+    width: 170px;
+    /* You, be fixed to 170 */
+    background: #1CEA6E;
+    padding: 24px;
+}
+
+#main {
+    background: #C0FFEE;
+    padding: 24px;
+}
