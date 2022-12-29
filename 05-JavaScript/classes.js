@@ -103,8 +103,8 @@ console.log('The width of this polygon is ' + p.width); // The width of this pol
 // Example 2: Creating a new class (expression-form)
 // ===============================================================
 
-// Our Polygon class above is an example of a Class declaration.
-// ES6 classes also support Class expressions, which is just another way of defining a new class. For example:
+// Our Polygon class above is an example of a class declaration.
+// ES6 classes also support class expressions, which is just another way of defining a new class. For example:
 const MyPoly = class Poly {
     getPolyName() {
         console.log('Hi. I was created with a class expression. My name is ' + Poly.name); 
@@ -117,11 +117,9 @@ inst.getPolyName(); // Hi. I was created with a class expression. My name is Pol
 // Example 3: Extending an existing class
 // ===============================================================
 
-// Classes support extending other classes, but can also extend
-// other objects. Whatever you extend must be a constructor.
+// Classes support extending other classes, but can also extend other objects. Whatever you extend must have a constructor.
 //
-// Let's extend the Polygon class to create a new derived class
-// called Square.
+// Let's extend the Polygon class to create a new derived class called Square.
 class Square extends Polygon {
     constructor(length) {
         // The reserved 'super' keyword is for making super-constructor
