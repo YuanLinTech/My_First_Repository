@@ -2,8 +2,8 @@
 let Foo = class { };  // constructor property is optional
 Foo = class { };      // Re-declaration is allowed
 
-console.log(typeof(Foo));             // returns "function"
-console.log(typeof(class{ }));        // returns "function"
+console.log(typeof(Foo));             // function
+console.log(typeof(class{ }));        // function
 
 console.log(Foo instanceof Object);   // true
 console.log(Foo instanceof Function); // true
@@ -66,13 +66,13 @@ console.log(new ParentClass()); // ParentClass {}
 // The return value is ignored because it's not an object
 // This is consistent with function constructors
 
-class ChildClass extends ParentClass {
+/* class ChildClass extends ParentClass {
     constructor() {
         return 1;
     }
 }
 
-console.log(new ChildClass()); // TypeError: Derived constructors may only return object or undefined
+// console.log(new ChildClass()); // TypeError: Derived constructors may only return object or undefined*/
 
 // A base class is defined using the new reserved 'class' keyword
 class Polygon {
@@ -80,45 +80,39 @@ class Polygon {
     // not supplied, a default constructor is used instead:
     // constructor() { }
     constructor(height, width) {
-        this.name = 'Polygon';
+        this.name = 'polygon';
         this.height = height;
         this.width = width;
     }
 
-    // Simple class instance methods using short-hand method
-    // declaration
+    // Simple class instance methods using short-hand method declaration
     sayName() {
-        ChromeSamples.log('Hi, I am a ', this.name + '.');
+        console.log('Hi, I am a ' + this.name + '.'); // Hi, I am a polygon.
     }
 
     sayHistory() {
-        ChromeSamples.log('"Polygon" is derived from the Greek polus (many) ' +
-            'and gonia (angle).');
+        console.log('"Polygon" is derived from the Greek polus (many) ' + 'and gonia (angle).');
     }
-
-    // We will look at static and subclassed methods shortly
 }
 
 // Classes are used just like ES5 constructor functions:
 let p = new Polygon(300, 400);
-p.sayName();
-ChromeSamples.log('The width of this polygon is ' + p.width);
+p.sayName(); // Hi, I am a polygon.
+console.log('The width of this polygon is ' + p.width); // The width of this polygon is 400
 
 // Example 2: Creating a new class (expression-form)
 // ===============================================================
 
 // Our Polygon class above is an example of a Class declaration.
-// ES6 classes also support Class expressions - just another way
-// of defining a new class. For example:
+// ES6 classes also support Class expressions, which is just another way of defining a new class. For example:
 const MyPoly = class Poly {
     getPolyName() {
-        ChromeSamples.log('Hi. I was created with a Class expression. My name is ' +
-            Poly.name);
+        console.log('Hi. I was created with a class expression. My name is ' + Poly.name); 
     }
 };
 
-let inst = new MyPoly();
-inst.getPolyName();
+let inst = new MyPoly(); 
+inst.getPolyName(); // Hi. I was created with a class expression. My name is Poly.
 
 // Example 3: Extending an existing class
 // ===============================================================
@@ -138,7 +132,7 @@ class Square extends Polygon {
         super(length, length);
         // Note: In derived classes, super() must be called before you
         // can use 'this'. Leaving this out will cause a reference error.
-        this.name = 'Square';
+        this.name = 'square';
     }
 
     // Getter/setter methods are supported in classes,
@@ -154,8 +148,8 @@ class Square extends Polygon {
 
 let s = new Square(5);
 
-s.sayName();
-ChromeSamples.log('The area of this square is ' + s.area);
+s.sayName(); // Hi, I am a square.
+console.log('The area of this square is ' + s.area); // The area of this square is 25
 
 // Example 4: Subclassing methods of a parent class
 // ===============================================================
@@ -163,13 +157,13 @@ ChromeSamples.log('The area of this square is ' + s.area);
 class Rectangle extends Polygon {
     constructor(height, width) {
         super(height, width);
-        this.name = 'Rectangle';
+        this.name = 'rectangle';
     }
     // Here, sayName() is a subclassed method which
     // overrides their superclass method of the same name.
     sayName() {
-        ChromeSamples.log('Sup! My name is ', this.name + '.');
-        super.sayHistory();
+        console.log('Sup! My name is ' + this.name + '.'); // Sup! My name is rectangle.
+        super.sayHistory(); // "Polygon" is derived from the Greek polus (many) and gonia (angle).
     }
 }
 
