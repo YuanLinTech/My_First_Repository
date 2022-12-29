@@ -124,15 +124,11 @@ console.log(myArr.length); // Output: 2
 console.log(myArr); // Output: [ <2 empty items> ]
 console.log(myArr[0]); // Output: undefined
 
+// Function declaration
 function func1(a, b, c) {
     console.log(arguments[0]);
-    // expected output: 1
-
     console.log(arguments[1]);
-    // expected output: 2
-
     console.log(arguments[2]);
-    // expected output: 3
 }
 func1(1, 2, 3); 
 // expected output:
@@ -140,6 +136,7 @@ func1(1, 2, 3);
 // 2
 // 3
 
+// Function declaration
 function myFunction(x, y, z) 
 { 
     return x+y+z;
@@ -147,14 +144,28 @@ function myFunction(x, y, z)
 const args1 = [1, 2, 3];
 console.log(myFunction(...args1)); // expected output: 6
 
-function sumFunc(v, w, x, y, z) 
-{
-    return v + w + x + y + z;
+// Function declaration
+function sumFunc1(...theArgs) {
+    let total = 0;
+    for (const arg of theArgs) {
+        total += arg;
+    }
+    return total;
+}
+
+// SumFunc2() is equivalent to SumFunc1()
+function sumFunc2(){
+    let total = 0;
+    for (const arg of arguments){
+        total += arg;
+    }
+    return total;
 }
 
 const args2 = [0, 1];
 const args3 = [2, 3];
-console.log(sumFunc(-1, ...args2, ...args3)); // expected output: 5
+console.log(sumFunc1(-1, ...args2, ...args3)); // expected output: 5
+console.log(sumFunc2(-1, ...args2, ...args3)); // expected output: 5
 
 const myHonda = { color: 'red', wheels: 4, engine: { cylinders: 4, size: 2.2 } };
 // const myCar = [...myHonda, 2, 'cherry condition', 'purchased 1997']; // TypeError: myHonda is not iterable
