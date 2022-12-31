@@ -1,7 +1,8 @@
-import { createElement } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 function Greeting({ name }) {
-    return createElement(
+    return React.createElement(
         'h1',
         { className: 'greeting' },
         'Hello ',
@@ -11,7 +12,7 @@ function Greeting({ name }) {
 }
 
 export default function App() {
-    return createElement(
+    return React.createElement(
         Greeting,
         { name: 'Taylor' }
     );
