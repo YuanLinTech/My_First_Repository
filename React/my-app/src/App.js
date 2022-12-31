@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './App.css';
+import './App.css';
 
-function Greeting({ name }) {
+function App() {
   return (
-    <h1 className="greeting">
-      Hello <i>{name}</i>. Welcome!
-    </h1>
+    <div className="App">
+      <h1>Hello World!</h1>
+    </div>
   );
 }
 
-export default function App() {
-  return <Greeting name="Taylor" />;
-} 
+export default App;
