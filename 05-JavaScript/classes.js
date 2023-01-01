@@ -167,3 +167,100 @@ class Rectangle extends Polygon {
 
 let r = new Rectangle(50, 60);
 r.sayName();
+
+const obj = {
+    log: ['example', 'test'],
+    latest() {
+        if (this.log.length === 0) return undefined;
+        return this.log[this.log.length - 1];
+    }
+}
+console.log(obj.latest); // [Function: latest]
+obj.latest = "hello";
+console.log(obj.latest); // "hello"
+
+const obj1 = {
+    log: ['example', 'test'],
+    get latest() {
+        if (this.log.length === 0) return undefined;
+        return this.log[this.log.length - 1];
+    }
+}
+console.log(obj1.latest); // "test"
+// obj.latest = "hello"; // TypeError: Cannot set property latest of #<Object> which has only a getter
+
+const language = {
+    set current(name) {
+        this.log.push(name);
+    },
+    log: []
+}
+
+language.current = 'EN';
+console.log(language.log); // ['EN']
+
+language.current = 'FR';
+console.log(language.log); // ['EN', 'FR']
+
+console.log(language.current); // undefined
+
+class Greeting {
+    #msg = "hello world";
+    get msg() {
+        return this.#msg;
+    }
+    set msg(x) {
+        this.#msg = `hello ${x}`;
+    }
+}
+
+// console.log(hello.msg) calls the get msg() function, while hello.msg = “cake” calls the set msg() function
+const hello = new Greeting();
+console.log(hello.msg); // "hello world"
+
+hello.msg = "cake";
+console.log(hello.msg); // "hello cake"
+
+const o = { a: 0 };
+Object.defineProperty(o, 'b', { get() { return this.a + 1; } });
+/* Equivalent to
+const o = {
+    a: 0,
+    get b() {
+        return this.a + 1;
+    }
+}*/
+console.log(o.b) // Runs the getter, which yields a + 1 (which is 1)
+
+const ob = { a: 0 };
+Object.defineProperty(ob, 'b', {
+    set(x) { this.a = x / 2; }
+});
+
+/* Equivalent to
+const ob = {
+    a: 0,
+    set b(x) {
+        this.a = x / 2;
+    }
+}*/
+
+ob.b = 10; // Runs the setter, which assigns 10 / 2 (5) to the 'a' property
+console.log(ob.a); // 5
+
+const expr = 'foo';
+
+const ob1 = {
+    baz: 'bar',
+    set [expr](v) { this.baz = v; }
+};
+
+/* Equivalent to
+const ob1 = {
+    baz: 'bar',
+    set foo(v) { this.baz = v; }
+};*/
+
+console.log(ob1.baz); // "bar"
+ob1.foo = 'baz'; // Run the setter
+console.log(ob1.baz); // "baz"
