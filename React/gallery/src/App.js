@@ -1,6 +1,5 @@
-import React from 'react';
+import { useState } from 'react';
 import { sculptureList } from './data.js';
-// import ReactDOM from 'react-dom/client';
 
 export default function Gallery() {
   const [index, setIndex] = useState(0);
@@ -21,7 +20,7 @@ export default function Gallery() {
   let sculpture = sculptureList[index];
   return (
     <>
-      <button onClick={handlePreviousClick} style={{ display: inline }}>
+      <button onClick={handlePreviousClick}>
         Previous
       </button>
       <button onClick={handleNextClick}>
