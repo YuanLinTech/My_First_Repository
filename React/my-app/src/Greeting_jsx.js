@@ -1,6 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-
 function Greeting({ name }) {
     return (
         <h1 className="greeting">
@@ -10,5 +7,11 @@ function Greeting({ name }) {
 }
 
 export default function App() {
-    return <Greeting name="Taylor" />;
+    return (
+        <>
+            <Greeting name="Sara" />
+            <Greeting name="Cahal" />
+            <Greeting name="Edite" />
+        </>
+    );
 }
