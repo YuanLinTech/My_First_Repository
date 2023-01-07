@@ -3,8 +3,8 @@ const http = require('http'); // Importing a global module named HTTP
 /* The first argument of request listener contains data about the request and the second one will help you send a response. 
 Node will execute the function whenever a request reaches our server. */
 const server = http.createServer((req, res) => {
-    console.log(req); // Print server request
-    console.log(res); // Print server response
+    console.log(req.url, req.method, req.headers); // Print server request
+    // console.log(res); // Print server response
     process.exit(); // Stop listening, unregister the server and quit the process
 }); 
 
