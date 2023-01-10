@@ -34,6 +34,10 @@ SELECT * FROM Products WHERE name='Alipay' LIMIT 10;
 ```
 
 ### 3.b Component-Based
+Build encapsulated components that manage their own state, then compose them to make complex UIs.
+
+Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
+
 
 ```jsx
 // NavBarItem
@@ -43,6 +47,9 @@ NavBarItem.html
 ```
 
 ### 3.c Learn Once, Write Anywhere
+We don’t make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.
+
+React can also render on the server using Node and power mobile apps using React Native.
 
 - React Native (RN) mobile application
 -- React TV TV application etc
