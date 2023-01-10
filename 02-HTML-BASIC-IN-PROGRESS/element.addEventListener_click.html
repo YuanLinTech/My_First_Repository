@@ -5,19 +5,17 @@
     <h1>The Element Object</h1>
     <h2>The addEventListener() Method</h2>
 
-    <p>Execute a function when a user clicks on a button:</p>
+    <p>Click the following button to display "Hello World":</p>
 
     <button id="myBtn">Try it</button>
 
-    <p id="demo">
+    <p id="demo"></p>
 
     <script>
         const element = document.getElementById("myBtn");
-        element.addEventListener("click", myFunction);
-
-        function myFunction() {
-            document.getElementById("demo").innerHTML = "Hello World";
-        }
+        element.addEventListener("click", function() {
+        document.getElementById("demo").innerHTML = "Hello World";
+        });
     </script>
 
     </body>
