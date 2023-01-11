@@ -23,3 +23,4 @@ const server = http.createServer((req,res) => {
 )
 
 server.listen(3000);
+// API server: Accept front end request for data, then retrieve data from the back end, then send the data to the front end as the response.
