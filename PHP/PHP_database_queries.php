@@ -80,14 +80,15 @@ $users = DB::table('users')
 ->where('subscribed','<>','1')
 ->get();
 
-// Return all rows in the "users" table where the value of the "votes" column is greater than 100 or the value of the "name" column is "John"
+// Return all rows in the "users" table where the value of the "votes" attribute is greater than 100 
+// or the value of the "name" attribute is "John"
 $users = DB::table('users')
 ->where('votes', '>', 100)
 ->orWhere('name', 'John')
 ->get();
 
-// Return all rows in the "users" table where the value of the "votes" column is greater than 100 
-// or the value of the "name" column is "Abigail" and the value of the "votes" column is greater than 50
+// Return all rows in the "users" table where the value of the "votes" attribute is greater than 100 
+// or the value of the "name" attribute is "Abigail" and the value of the "votes" attribute is greater than 50
 $users = DB::table('users')
 ->where('votes', '>', 100)
 ->orWhere(function($query) {
@@ -96,13 +97,27 @@ $users = DB::table('users')
 })
 ->get();
 
-// Return all rows in the "products" table, excpet those where the value of the "clearance" column is true 
-// or the value of the "price" column is less than 10
+// Return all rows in the "products" table, except those whose "clearance" attribute equals true
+// or whose "price" attribute is less than 10
 $products = DB::table('products')
 ->whereNot(function ($query) {
     $query->where('clearance', true)
           ->orWhere('price', '<', 10);
     })
 ->get();
+
+// Insert a row into the table "users" whose "email" attribute is "kayla@example.com" and whose "votes" attribute equals 0
+DB::table('users')->insert([
+    'email' => 'kayla@example.com',
+    'votes' => 0
+]);
+
+/* Insert two rows into the table,
+one whose "email" attribute is "picard@example.com" and whose "votes" attribute equals 0,
+the other whose "email" attribute is "janeway@example.com" and whose "votes" attribute equals 0. */
+DB::table('users')->insert([
+    ['email' => 'picard@example.com', 'votes' => 0],
+    ['email' => 'janeway@example.com', 'votes' => 0],
+]);
 
 ?>
