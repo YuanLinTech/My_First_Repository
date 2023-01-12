@@ -52,20 +52,47 @@ $users = DB::table('users')->where('votes', 100)->get();
 
 // Return all rows in the "users" table where the value of the "votes" column is greater than or equal to 100 
 $users = DB::table('users')
-        ->where('votes', '>=', 100)
-        ->get();
+->where('votes', '>=', 100)
+->get();
 
 // Return all rows in the "users" table where the value of the "votes" column does not equal 100 
 $users = DB::table('users')
-        ->where('votes', '<>', 100)
-        ->get();
+->where('votes', '<>', 100)
+->get();
 
 // Return all rows in the "users" table where the value of the "name" column starts with "T" 
 $users = DB::table('users')
-        ->where('name', 'like', 'T%')
-        ->get();
+->where('name', 'like', 'T%')
+->get();
 
-// Delete all rows in the "users" table where the value of the "votes" column is greater than 100
+// Delete all rows in the "users" table where the value of the "votes" column is greater than 100 and return the number of rows deleted
 $deleted = DB::table('users')->where('votes', '>', 100)->delete();
 
+// Return all rows in the "users" table where the value of the "status" column is equal to 1 and the value of the "subscribed" column does not equal 1
+$users = DB::table('users')->where([
+    ['status', '=', '1'],
+    ['subscribed', '<>', '1'],
+])->get();
+
+// The above statement is equivalent to
+$users = DB::table('users')
+->where('status','=', '1')
+->where('subscribed','<>','1')
+->get();
+
+// Return all rows in the "users" table where the value of the "votes" column is greater than 100 or the value of the "name" column is "John"
+$users = DB::table('users')
+->where('votes', '>', 100)
+->orWhere('name', 'John')
+->get();
+
+// Return all rows in the "users" table where the value of the "votes" column is greater than 100 
+// or the value of the "name" column is "Abigail" and the value of the "votes" column is greater than 50
+$users = DB::table('users')
+->where('votes', '>', 100)
+->orWhere(function($query) {
+    $query->where('name', 'Abigail')
+          ->where('votes', '>', 50);
+})
+->get();
 ?>
