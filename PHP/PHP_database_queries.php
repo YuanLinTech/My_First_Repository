@@ -39,7 +39,7 @@ foreach ($titles as $name => $title) {
     echo $title;
 }
 
-// Returns all rows in the "user" table 
+// Return all rows in the "user" table 
 // where the value of the "votes" column is equal to 100 and the value of the age column is greater than 35:
 
 $users = DB::table('users')
@@ -47,20 +47,25 @@ $users = DB::table('users')
 ->where('age', '>', 35)
 ->get();
 
-// Returns all rows in the "user" table where the value of the "votes" column is equal to 100 
+// Return all rows in the "users" table where the value of the "votes" column is equal to 100 
 $users = DB::table('users')->where('votes', 100)->get();
 
+// Return all rows in the "users" table where the value of the "votes" column is greater than or equal to 100 
 $users = DB::table('users')
-                ->where('votes', '>=', 100)
-                ->get();
+        ->where('votes', '>=', 100)
+        ->get();
 
+// Return all rows in the "users" table where the value of the "votes" column does not equal 100 
 $users = DB::table('users')
-                ->where('votes', '<>', 100)
-                ->get();
+        ->where('votes', '<>', 100)
+        ->get();
 
+// Return all rows in the "users" table where the value of the "name" column starts with "T" 
 $users = DB::table('users')
-                ->where('name', 'like', 'T%')
-                ->get();
+        ->where('name', 'like', 'T%')
+        ->get();
 
- 
+// Delete all rows in the "users" table where the value of the "votes" column is greater than 100
+$deleted = DB::table('users')->where('votes', '>', 100)->delete();
+
 ?>
