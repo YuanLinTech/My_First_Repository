@@ -95,4 +95,14 @@ $users = DB::table('users')
           ->where('votes', '>', 50);
 })
 ->get();
+
+// Return all rows in the "products" table, excpet those where the value of the "clearance" column is true 
+// or the value of the "price" column is less than 10
+$products = DB::table('products')
+->whereNot(function ($query) {
+    $query->where('clearance', true)
+          ->orWhere('price', '<', 10);
+    })
+->get();
+
 ?>
