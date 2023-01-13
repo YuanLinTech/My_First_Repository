@@ -1,7 +1,7 @@
 <?php
 use Illuminate\Support\Facades\DB; // class DB extends Facade
 use Illuminate\Database\Eloquent\Builder; // class Illuminate\Database\Eloquent\Builder uses the trait Illuminate\Database\Concerns\BuildsQueries
- 
+
 $users = DB::table('users')->get(); // Select the whole "users" table
  
 // table: "users", row: "user", attribute: "name"
@@ -119,5 +119,44 @@ DB::table('users')->insert([
     ['email' => 'picard@example.com', 'votes' => 0],
     ['email' => 'janeway@example.com', 'votes' => 0],
 ]);
+
+/* Select the columns "name" and "email" from the "users" table
+and rename the "email" column to "user_email" in the query result. */
+$users = DB::table('users')
+->select('name', 'email as user_email')
+->get();
+
+// Select and return distinct values from the "role" column in the "users" table
+$users = DB::table('users')
+->select('role')
+->distinct()
+->get();
+
+// Select the "name" column of the "users" table and return the query result
+$query = DB::table('users')->select('name');
+
+// Add the "age" column to the query result above
+$users = $query->addSelect('age')->get();
+
+/* Update the rows in the "usesr" table whose "id" attribute equals to 1 
+by setting the value of the "votes" attribute to 1, and return the number of affected rows. */
+$affected = DB::table('users')
+->where('id', 1)
+->update(['votes' => 1]);
+/* The command above is equivalent to 
+UPDATE users
+SET votes = 1
+WHERE id = 1
+*/
+
+/* Update the rows in the "users" table whose "email" attribute is "john@example.com" and whose "name" attribute is "John". 
+If such rows exist, set their "votes" attribute to 2. If such rows don't exist, 
+create a new row in the "users" table whose "email" attribute is "john@example.com", "name" attribute is "John". 
+and "votes" attribute equals to 2.
+*/
+DB::table('users') ->updateOrInsert(
+    ['email' => 'john@example.com', 'name' => 'John'],
+    ['votes' => '2']
+);
 
 ?>
