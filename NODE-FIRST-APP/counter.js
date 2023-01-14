@@ -17,10 +17,10 @@ const counter = (function(){
 })();
 
 counter.increment();
-console.log(counter.getCurrentCount());
+console.log(counter.getCurrentCount()); // 1
 
 counter.increment();
-console.log(counter.getCurrentCount());
+console.log(counter.getCurrentCount()); // 2
 
 counter.increment();
-console.log(counter.getCurrentCount());
+console.log(counter.getCurrentCount()); // 3
