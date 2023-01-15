@@ -17,12 +17,6 @@ const moduleA = {exports: {}};
         getCurrentCount,
     };
 
-    /* Equivalent to 
-    exports.increment = increment;
-    exports.getCurrentCount = getCurrentCount;
-    
-    */
-
 })(moduleA);
 
 /* The "counter" variable inside the function cannot be accessed from outside the function using counter.counter, 
