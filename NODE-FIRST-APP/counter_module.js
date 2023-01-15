@@ -16,6 +16,12 @@ const moduleA = {exports: {}};
         getCurrentCount,
     };
 
+    /* Equivalent to 
+    exports.increment = increment;
+    exports.getCurrentCount = getCurrentCount;
+    
+    */
+
 })(moduleA);
 
 /* The "counter" variable inside the function cannot be accessed from outside the function using counter.counter, 
@@ -29,3 +35,10 @@ console.log(moduleA.exports.getCurrentCount()); // 2
 
 moduleA.exports.increment();
 console.log(moduleA.exports.getCurrentCount()); // 3
+
+// Every JavaScript file will be converted into a module when it is run in Node.js
+
+// console.log(global);
+// console.log(module); // "module" is a Node.js built-in variable
+// console.log(__dirname); // C:\Users\yuanl\Documents\GitHub\My_First_Repository\NODE-FIRST-APP
+// console.log(__filename); // C:\Users\yuanl\Documents\GitHub\My_First_Repository\NODE-FIRST-APP\counter_module.js
