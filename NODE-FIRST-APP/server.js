@@ -23,9 +23,9 @@ const server = http.createServer((req, res) => {
         res.end();
     }
     
-    console.log(req.url, req.method, req.headers); // Print server request
-    // console.log(res); // Print server response
-    process.exit(); // Stop listening, unregister the server and quit the process
+    /* console.log(req.url, req.method, req.headers); // Print server request
+    console.log(res); // Print server response
+    process.exit(); // Stop listening, unregister the server and quit the process*/
 }); 
 
 
