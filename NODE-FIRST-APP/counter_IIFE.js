@@ -5,7 +5,7 @@
 */
 // IIFE (Immediately Invoked Function Expression)
 const counter = (function(){
-    let counter = 0;
+    let counter = 0; 
     function increment(){
         counter++;
     }
@@ -15,6 +15,9 @@ const counter = (function(){
     return{increment, getCurrentCount};
 
 })();
+
+/* The "counter" variable inside the function cannot be accessed from outside the function using counter.counter, 
+because the "counter" variable inside the function will be discarded after the function is called.*/
 
 counter.increment();
 console.log(counter.getCurrentCount()); // 1
