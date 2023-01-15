@@ -5,7 +5,7 @@
 */
 // IIFE (Immediately Invoked Function Expression)
 const counter = (function(){
-    let counter = 0; 
+    let counter = 0; // This variable is private and cannot be accessed from outside the function
     function increment(){
         counter++;
     }
