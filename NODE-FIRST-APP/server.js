@@ -1,25 +1,25 @@
 const http = require('http'); // Importing a global module named HTTP
 const fs = require('fs'); // "fs" stands for "file systems"
 const path = require('path');
-const homePage = fs.readfileSync(path.join(__dirname, 'home.html')); // Find home.html in the current directory
+const homePage = fs.readFileSync(path.join(__dirname, 'home.html')); // Find home.html in the current directory
 
 /* The first argument of request listener contains data about the request and the second one will help you send a response. 
 Node will execute the function whenever a request reaches our server. */
 const server = http.createServer((req, res) => {
     if (req.url === '/about'){
-        res.write('about me');
+        res.write('About me'); // Display "about me" on the page with the URL "localhost:3000/about"
         res.end();
         return;
     }
     else if (req.url === '/home')
     {
-        res.write('Hello');
+        res.write(homePage); // Display homePage on the page with the URL "localhost:3000/home"
         res.end();
         return;
     }
     else
     {
-        res.write('hello');
+        res.write('Hello'); // Display "Hello" on any other page, including "localhost:3000"
         res.end();
     }
     
