@@ -1,3 +1,3 @@
-const{increment, getCurrentCount} = require('/index.js');
+const{increment, getCurrentCount} = require('./index.js');
 increment();
-console.log(getCurrentCount());
+console.log(getCurrentCount()); // 1

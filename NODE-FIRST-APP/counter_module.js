@@ -3,6 +3,7 @@ const moduleA = {exports: {}};
     // Return is no longer needed after passing a module
     let counter = 0;
 
+    // This method is private and cannot be exported
     function increment(){
         counter++;
     }
