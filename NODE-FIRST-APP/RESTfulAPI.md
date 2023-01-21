@@ -1,3 +1,5 @@
+RESTful API Design Guidelines
+
 1. Versioning
     example.com/v1
     example.com/api/v1
@@ -29,3 +31,9 @@ GET /v1/posts?page=20&pageSize=100
 204 -> delete success
 
 7. Return highly readable error message
+{"error": "error"}
+{"error": "invalid password"}
+
+{"error": "A"}
+js
+{A: "invalid password"}
