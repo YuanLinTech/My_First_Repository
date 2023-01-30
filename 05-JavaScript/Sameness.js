@@ -16,7 +16,7 @@ console.log(1 === "01"); // false
 console.log('\n');
 
 console.log(10 == "1e1"); // true
-console.log(10 == "1e1"); // false
+console.log(10 === "1e1"); // false
 console.log('\n');
 
 console.log(100 == "1e2"); // true
