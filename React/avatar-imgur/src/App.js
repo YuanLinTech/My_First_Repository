@@ -2,13 +2,15 @@ import getImageUrl from './utils.js';
 
 function Avatar({ person, width = 120, height = 150}) {
   return (
-    <img
-      className="avatar"
-      src={getImageUrl(person)}
-      alt={person.name}
-      width={width}
-      height={height}
-    />
+    <div style={{margin: 10}}>
+      <img
+        className="avatar"
+        src={getImageUrl(person)}
+        alt={person.name}
+        width={width}
+        height={height}
+      />
+    </div>
   );
 }
 
