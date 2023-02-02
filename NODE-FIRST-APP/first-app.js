@@ -49,7 +49,7 @@ export default function Profile() {
   );
 }
 
-// util.js
+// utils.js
 export function getImageUrl(photo, width = '1000', height = '700') {
     return (
         'https://images.pexels.com/photos/' +
