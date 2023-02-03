@@ -1,6 +1,6 @@
 import getImageUrl from './utils.js';
 
-function Avatar({ profile, width = '1260', height = '750' }) {
+function Avatar({ profile, width = '630', height = '375' }) {
   return (
     <div style={{margin: 10}}>
       <img
@@ -18,16 +18,16 @@ export default function Profile() {
   return (
     <div>
       <Avatar
-        width={750}
-        height={1000}
+        width={375}
+        height={500}
         profile={{ 
           name: 'Man in Black Jacket', 
           imageId: '771742'
         }}
       />
       <Avatar
-        width={1000}
-        height={800}
+        width={500}
+        height={400}
         profile={{
           name: 'Smiling Woman in White Bikini Top', 
           imageId: '3811176'
