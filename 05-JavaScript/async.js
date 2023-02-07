@@ -6,4 +6,4 @@ function myStopFunction() {
     clearTimeout(myTimeout);
 }
 
-setTimeout(myStopFunction,3000);
+setTimeout(myStopFunction, 3000);
