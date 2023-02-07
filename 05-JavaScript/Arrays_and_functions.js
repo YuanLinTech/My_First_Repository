@@ -375,18 +375,18 @@ console.log(typeof(firstTen(4, 5, 100))); // Expected output: object
 
 // Function expression
 
-// var FirstTenExpression = function firstTen(param1, param2, param3) {
-//     const res = [];
-//     for (var i = 0; i <= param3; i++) {
-//         if (res.length == 10) {
-//             return res;
-//         }
+var FirstTenExpression = function firstTen(param1, param2, param3) {
+    const res = [];
+    for (var i = 0; i <= param3; i++) {
+        if (res.length == 10) {
+            return res;
+        }
 
-//         if ((i % param1 === 0) && (i % param2 !== 0)) {
-//             res.push(i);
-//         }
-//     }
-// }
+        if ((i % param1 === 0) && (i % param2 !== 0)) {
+            res.push(i);
+        }
+    }
+}
 
 // Anonymous function expression
 var sum = function(num1, num2){
