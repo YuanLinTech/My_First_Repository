@@ -7,18 +7,21 @@ const homePage = fs.readFileSync(path.join(__dirname, 'home.html')); // Find hom
 Node will execute the function whenever a request reaches our server. */
 const server = http.createServer((req, res) => {
     if (req.url === '/about'){
+        res.setHeader('Content-Type', 'text/html'); // Setting a single header value for implicit headers. Returns the response object.
         res.write('About me'); // Display "about me" on the page with the URL "localhost:3000/about"
-        res.end();
+        res.end(); // Signalling to the server that all response headers and body have been sent
         return;
     }
     else if (req.url === '/home')
     {
+        res.setHeader('Content-Type', 'text/html');
         res.write(homePage); // Display homePage on the page with the URL "localhost:3000/home"
         res.end();
         return;
     }
     else
     {
+        res.setHeader('Content-Type', 'text/html'); 
         res.write('Hello'); // Display "Hello" on any other page, including "localhost:3000"
         res.end();
     }
