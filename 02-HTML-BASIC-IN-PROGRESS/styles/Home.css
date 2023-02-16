@@ -1,0 +1,12 @@
+.headline{
+    background-image: url("../images/1-Home.png");
+}
+
+nav ol{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav-bar {
+    display: inline-block;
+}
