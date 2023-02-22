@@ -113,5 +113,3 @@ const deleteWords = words.filter((word, index, arr) => {
 console.log(words); // [ 'spray', 'limit', 'exuberant' ]
 console.log(deleteWords); // ["spray" ,"limit"]
 // Notice 'elite' is not even obtained as it's been popped off 'words' before filter can even get there
-
-  
