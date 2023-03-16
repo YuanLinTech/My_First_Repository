@@ -18,9 +18,9 @@ export default function Stopwatch() {
   }
 
   function handleReset(){
-    clearInterval(intervalRef.current);
     setStartTime(Date.now());
     setNow(Date.now());
+    clearInterval(intervalRef.current);
   }
 
   let secondsPassed = 0;
