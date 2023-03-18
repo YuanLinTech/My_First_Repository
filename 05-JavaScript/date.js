@@ -22,4 +22,3 @@ console.log(date4.toString()); // Sun Dec 17 1995 03:24:00 GMT+1100 (Australian 
 const date5 = new Date('2023-03-27');
 console.log(date5); // 2023-03-27T00:00:00.000Z (time default to 00:00:00) if not specified
 console.log(date5.toString()); // Mon Mar 27 2023 11:00:00 GMT+1100 (Australian Eastern Daylight Time)
-
