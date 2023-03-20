@@ -33,3 +33,5 @@ console.log('\n');
 
 console.log(2 == true); // false
 console.log(2 === true); // false
+
+console.log({} === {}); // false
