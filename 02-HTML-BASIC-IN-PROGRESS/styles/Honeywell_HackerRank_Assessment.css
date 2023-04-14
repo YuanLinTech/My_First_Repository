@@ -1,0 +1,25 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px,1fr));
+    grid-template-rows: repeat(4,minmax(100px,1fr));
+    gap: 0;
+    border: 1px solid black;
+}
+
+/*
+We set the grid-template-columns and grid-template-rows properties to repeat(4, minmax(100px, 1fr)), 
+which specifies that each column should have a minimum width of 100px and a maximum width of 1fr, 
+which means it will take up all the available space if there is any.
+*/
+
+/*
+You can also set the grid-template-columns and grid-template-rows property to repeat(auto-fit, minmax(100px, 1fr)). 
+The auto-fit keyword creates as many columns or rows as needed to fit the available space.
+*/
+
+/* By default, the grid and all its cells have no border.
+Therefore, we need to set the border in both .grid-container and .grid-item. */
+
+.grid-item{
+    border: 1px solid black; /* By default, the grid and all its cells have no border. */
+}
