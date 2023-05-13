@@ -29,7 +29,7 @@ class domainW3 extends domain {
 }
 
 $domainW3 = new domainW3;
-echo $domainW3 -> websiteName;
+echo $domainW3 -> websiteName; // W3Schools.com
 
 class pi {
   public static $value=3.14159;
@@ -48,7 +48,8 @@ class x extends pi {
 }
 
 // Get value of static property directly via child class
-echo x::$value."<br>"; // 3.14159
+echo x::$value; // 3.14159
+echo "<br>";
 
 // or get value of static property via xStatic() method
 $x = new x();
