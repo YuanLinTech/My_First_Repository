@@ -1,5 +1,6 @@
 import { useImmer } from 'use-immer';
 import { useState } from 'react';
+import './style.css';
 
 function Form() {
   const [person, setPerson] = useState({
@@ -50,49 +51,49 @@ function Form() {
 
   return (
     <>
+      
+      <label>
+        Name:&nbsp;
+        <input
+          value={person.name}
+          onChange={handleNameChange}
+        />
+      </label>
+    
+    
+      <label>
+        Title:&nbsp;
+        <input
+          value={person.artwork.title}
+          onChange={handleTitleChange}
+        />
+      </label>
+    
+    
+      <label>
+        City:&nbsp;
+        <input
+          value={person.artwork.city}
+          onChange={handleCityChange}
+        />
+      </label>
+    
+    
+      <label>
+        Image:&nbsp;
+        <input
+          value={person.artwork.image}
+          onChange={handleImageChange}
+        />
+      </label>
+      
       <div>
-        <label>
-          Name:&nbsp;
-          <input
-            value={person.name}
-            onChange={handleNameChange}
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          Title:&nbsp;
-          <input
-            value={person.artwork.title}
-            onChange={handleTitleChange}
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          City:&nbsp;
-          <input
-            value={person.artwork.city}
-            onChange={handleCityChange}
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          Image:&nbsp;
-          <input
-            value={person.artwork.image}
-            onChange={handleImageChange}
-          />
-        </label>
-      </div>
-      <p>
         <i>{person.artwork.title}</i>
         {' by '}
         {person.name}
         <br />
         (located in {person.artwork.city})
-      </p>
+      </div>
       <img 
         src={person.artwork.image} 
         alt={person.artwork.title}
@@ -137,49 +138,45 @@ function ImmerForm() {
 
   return (
     <>
+      <label>
+        Name:&nbsp;
+        <input
+          value={person.name}
+          onChange={handleNameChange}
+        />
+      </label>
+    
+      <label>
+        Title:&nbsp;
+        <input
+          value={person.artwork.title}
+          onChange={handleTitleChange}
+        />
+      </label>
+    
+      <label>
+        City:&nbsp;
+        <input
+          value={person.artwork.city}
+          onChange={handleCityChange}
+        />
+      </label>
+    
+      <label>
+        Image:&nbsp;
+        <input
+          value={person.artwork.image}
+          onChange={handleImageChange}
+        />
+      </label>
+  
       <div>
-        <label>
-          Name:&nbsp;
-          <input
-            value={person.name}
-            onChange={handleNameChange}
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          Title:&nbsp;
-          <input
-            value={person.artwork.title}
-            onChange={handleTitleChange}
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          City:&nbsp;
-          <input
-            value={person.artwork.city}
-            onChange={handleCityChange}
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          Image:&nbsp;
-          <input
-            value={person.artwork.image}
-            onChange={handleImageChange}
-          />
-        </label>
-      </div>
-      <p>
         <i>{person.artwork.title}</i>
         {' by '}
         {person.name}
         <br />
         (located in {person.artwork.city})
-      </p>
+      </div>
       <img 
         src={person.artwork.image} 
         alt={person.artwork.title}
@@ -191,8 +188,14 @@ function ImmerForm() {
 export default function App() {
   return (
     <>
-      <Form/>
-      <ImmerForm/>
+      <div className="grid-container">
+        <div className="grid-item">
+          <Form/>
+        </div>
+        <div className="grid-item">
+          <ImmerForm/>
+        </div>
+      </div>
     </>
   );
 }

@@ -8,7 +8,7 @@
 
 /*
 We set the grid-template-columns and grid-template-rows properties to repeat(4, minmax(100px, 1fr)), 
-which specifies that each column should have a minimum width of 100px and a maximum width of 1fr, 
+which specifies that each column and row should have a minimum width of 100px and a maximum width of 1fr, 
 which means it will take up all the available space if there is any.
 */
 

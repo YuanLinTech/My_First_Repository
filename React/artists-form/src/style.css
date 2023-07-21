@@ -1,0 +1,22 @@
+label{
+    display: block;
+}
+
+/*
+We set the grid-template-columns property to repeat(2, minmax(100px, 1fr)), 
+which specifies that each column should have a minimum width of 100px and a maximum width of 1fr, 
+which means it will take up all the available space if there is any.
+*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px,1fr));
+    column-gap: 20px;
+    margin: 10px;
+}
+
+.grid-item{
+    border: 2px solid black; /* By default, the grid and all its cells have no border. */
+    padding: 10px;
+}
+
