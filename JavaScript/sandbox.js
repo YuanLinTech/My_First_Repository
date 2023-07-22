@@ -130,4 +130,3 @@ console.log(1 + null) // 1
 console.log(1 + undefined) // NaN
 
 console.log(NaN == NaN) // False
-
