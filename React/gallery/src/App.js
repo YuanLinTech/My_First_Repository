@@ -6,10 +6,12 @@ export default function Gallery() {
   const [index, setIndex] = useState(0);
   const [showMore, setShowMore] = useState(false);
 
+/* If the current image is the last image (index === sculptureList.length - 1), go to the first image (whose index == 0) */
   function handleNextClick() {
-    setIndex((index + 1 < sculptureList.length) ? (index + 1) : 0)
+    setIndex((index < sculptureList.length - 1) ? (index + 1) : 0)
   }
 
+/* If the current image is the first image (index === 0), go to the last image (whose index == sculptureList.length - 1) */
   function handlePreviousClick() {
     setIndex((index > 0) ? (index - 1) : (sculptureList.length - 1))
   }
