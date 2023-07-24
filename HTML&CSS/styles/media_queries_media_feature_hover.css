@@ -1,0 +1,18 @@
+abbr {
+    color: chocolate;
+}
+
+/* Does the primary input mechanism allow the user to hover over elements? */
+@media (hover: hover) {
+    abbr:hover {
+        color: limegreen;
+        transition-duration: 1s;
+    }
+}
+
+/* "not" only negates "all" */
+@media not all and (hover: hover) {
+    abbr::after {
+        content: ' (' attr(title) ')';
+    }
+}
