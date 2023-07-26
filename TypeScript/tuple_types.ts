@@ -22,4 +22,11 @@ function readButtonInput(...args: [string, number, ...boolean[]]) {
     input.forEach((bool)=>console.log(bool));
 }
 
+/* The function is equivalent to
+function readButtonInput(name: string, version: number, ...input: boolean[]) {
+    const [name, version, ...input] = args;
+    console.log(`name: ${name}, version: ${version}`);
+    input.forEach((bool)=>console.log(bool));
+}*/
+
 readButtonInput(...a);
