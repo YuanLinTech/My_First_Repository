@@ -214,8 +214,11 @@ console.log(twoDArray instanceof Array); // true
 const arr1 = [0, 1, 2];
 const arr2 = [3, 4, 5];
 
-//  Prepend all items from arr2 onto arr1
-arr1.unshift.apply(arr1, arr2); // Equivalent to Array.prototype.unshift.apply(arr1, arr2);
+// //  Prepend all items from arr2 onto arr1
+// arr1.unshift.apply(arr1, arr2); // Equivalent to Array.prototype.unshift.apply(arr1, arr2);
+// console.log(arr1); // arr1 is now [3, 4, 5, 0, 1, 2]
+
+arr1.unshift(...arr2);
 console.log(arr1); // arr1 is now [3, 4, 5, 0, 1, 2]
 
 const newCar = myCar.slice(0, 3);

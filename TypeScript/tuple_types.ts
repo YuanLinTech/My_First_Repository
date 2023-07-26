@@ -15,3 +15,11 @@ type BooleansStringNumber = [...boolean[], string, number];
 const a: StringNumberBooleans = ["world", 3, true, false, true, false, true];
 const b: StringBooleansNumber = ["beautiful", true, false, 2];
 const c: BooleansStringNumber = [true, false, true, "world", 3,];
+
+function readButtonInput(...args: [string, number, ...boolean[]]) {
+    const [name, version, ...input] = args;
+    console.log(`name: ${name}, version: ${version}`);
+    input.forEach((bool)=>console.log(bool));
+}
+
+readButtonInput(...a);
