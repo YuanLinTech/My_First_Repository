@@ -1,0 +1,13 @@
+label{
+    background-color: white;
+    width: 65vw;
+    height: 3.2vh;
+    margin: 2px;
+    padding: calc(1.6vh - 8px);
+    box-sizing: border-box;
+}
+
+input{
+    margin: 0.4rem;
+    border-color: orange;
+}

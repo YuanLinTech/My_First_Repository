@@ -24,3 +24,6 @@ li > a{
     text-decoration: none;
 }
 
+a#inbox{
+    font-weight: bold;
+}
