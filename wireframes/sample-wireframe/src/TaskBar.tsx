@@ -1,6 +1,6 @@
 import { useId } from 'react';
 
-import '../styles/TaskBar.css';
+import './TaskBar.css';
 
 export default function TaskBar(task: {name: string})
 {   

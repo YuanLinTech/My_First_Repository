@@ -1,8 +1,17 @@
+:root{ /* Equivalent to div#root */
+  background-color: #f0f4f4;
+}
+
 h2{
   margin: 6.8vh 19.7vw 3.2vh 6.8vw;
   border-bottom: medium solid grey;
 }
 
+/* This also applies to div#root, which would double the padding than intended.
 div{
+  padding: 3.1vh 19.7vw 3.1vh 6.8vw;
+}*/
+
+div.TaskBar{
   padding: 3.1vh 19.7vw 3.1vh 6.8vw;
 }
