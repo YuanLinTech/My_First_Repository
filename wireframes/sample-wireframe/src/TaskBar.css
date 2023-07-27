@@ -11,3 +11,7 @@ input{
     margin: 0.4rem;
     border-color: orange;
 }
+
+div{
+    margin: 4px;
+}
