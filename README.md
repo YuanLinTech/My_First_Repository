@@ -1,2 +1,2 @@
 # My_First_Repository
-### A showcase of my skills in HTML, CSS and JavaScript.
+#### Showcasing my skills in HTML, CSS, JavaScript, as well as React using JavaScript and TypeScript.
