@@ -1,5 +1,6 @@
 :root{ /* Equivalent to div#root */
   background-color: #f0f4f4;
+  border: medium solid black;
 }
 
 h2{

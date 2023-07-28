@@ -1,6 +1,5 @@
 label{
     background-color: white;
-    width: 65vw;
     height: 3.2vh;
     margin: 2px;
     padding: calc(1.6vh - 8px);
@@ -12,6 +11,7 @@ input{
     border-color: orange;
 }
 
-div{
+div.tasks{
+    width: 65vw;
     margin: 4px;
 }
