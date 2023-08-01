@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/accordions.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+        <p>The Promise object represents the eventual completion or failure of an asynchronous operation and its resulting value.</p>
+    </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+        <p>This lets asynchronous methods return values like synchronous methods: 
+        instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.</p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+        <p>The eventual state of a pending promise can either be fulfilled with a value or rejected with a reason &lpar;error&rpar;. </p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } 
+                else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
