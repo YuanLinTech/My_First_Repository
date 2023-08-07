@@ -4,16 +4,24 @@ console.log(y); // y = 1
 console.log(z); // z = 2
 console.log(rest); // rest = [3, 4, 5]
 
-var obj = { a: 1, b: 2 };
-var { a, b } = obj;
-// is equivalent to:
-// var a = obj.a;
-// var b = obj.b;
-console.log(a); // a = 1
-console.log(b); // b = 2
-var { c, d } = obj;
-console.log(c); // Output: undefined
-console.log(d); // Output: undefined
+const obj = { A: 1, B: { C: 2 } };
+const { A, B: { C: D } } = obj;
+// Two variables are bound: `A` and `B`
+// This is equivalent to
+// const A = obj.A;
+// const {C: D} = obj.B;
+console.log(A); // 1
+console.log(D); // 2
+
+var myObj = { a: 1, b: { c: 2 } };
+var { a } = myObj; // a is constant
+// const { a } = obj is equivalent to const a = myObj.a;
+console.log(a); // 1
+
+let { b: { c: d } } = myObj; // d is re-assignable
+// let { b: { c: d } } = obj is equivalent to {c: d} = obj.b, which is equivalent to {c: d} = {c: 2}
+console.log(d); // 2
+
 
 var x = ([a, b] = [10, 20]) => a + b; /* Used destructuring assignment to assign a the default value of 10 and b the default value of 20. */
 console.log(x()); // Output: 30
