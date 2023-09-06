@@ -3,8 +3,8 @@ const currentDateTime2 = new Date(); // Current date and time in UTC and in ISO 
 const date1 = new Date('December 17, 1995 03:24:00'); // Interpreted as local time, result in UTC
 const date2 = new Date('2016-05-18T16:00:00Z'); // Result in UTC
 
-console.log(currentDateTime1); // Mon Feb 27 2023 12:00:24 GMT+1100 (Australian Eastern Daylight Time)
-console.log(currentDateTime2); // 2023-02-27T01:00:24.856Z
+console.log(currentDateTime1); // Sun Sep 03 2023 11:43:29 GMT+1000 (Australian Eastern Standard Time)
+console.log(currentDateTime2); // 2023-09-03T01:43:29.817Z
 console.log(date1); /* 1995-12-16T16:24:00.000Z ('Z' is the zone designator for the zero UTC offset. 
 'T' is a delimiter between date and time.) */
 console.log(date2); // 2016-05-18T16:00:00.000Z
@@ -13,10 +13,10 @@ const date3 = Date('December 17, 1995 03:24:00'); // Current data and time in th
 
 const date4 = new Date('December 17, 1995 03:24:00'); // Converted date and time in UTC and in ISO 8601 format
 
-console.log(date3); // Mon Feb 27 2023 12:00:24 GMT+1100 (Australian Eastern Daylight Time)
+console.log(date3); // Sun Sep 03 2023 11:43:29 GMT+1000 (Australian Eastern Standard Time)
 
 console.log(date4); // 1995-12-16T16:24:00.000Z
-
+console.log(date3.toString()); // Sun Sep 03 2023 11:43:29 GMT+1000 (Australian Eastern Standard Time)
 console.log(date4.toString()); // Sun Dec 17 1995 03:24:00 GMT+1100 (Australian Eastern Daylight Time)
 
 const date5 = new Date('2023-03-27');
